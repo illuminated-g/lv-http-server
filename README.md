@@ -3,4 +3,4 @@ HTTP Server implementation in LabVIEW. Utilizes IG TCP Streams and provides mech
 
 This server provides flexibility and extensibility via a handful of specific request processing steps that can have additional functionality plugged into. The following flowchart maps out the processing flow.
 
-![https://raw.githubusercontent.com/illuminated-g/lv-http-server/main/Documentation/Request%20Flow.drawio.png "Request Processing Flowchart"]
+![Request Processing Flowchart](https://raw.githubusercontent.com/illuminated-g/lv-http-server/main/Documentation/Request%20Flow.drawio.png "Request Processing Flowchart")
