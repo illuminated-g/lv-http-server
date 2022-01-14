@@ -1,5 +1,6 @@
 HTTP Server implementation in LabVIEW. Utilizes IG TCP Streams and provides mechanisms akin to Web Services.
 
+- [Overview](#overview)
 - [Processing Flow](#processing-flow)
 - [Handlers and Controllers](#handlers-and-controllers)
   - [Priority](#priority)
@@ -14,15 +15,24 @@ HTTP Server implementation in LabVIEW. Utilizes IG TCP Streams and provides mech
     - [Exception Handling](#exception-handling)
 - [Debugging](#debugging)
 
+# Overview
+
+This LV Http Server is intended to both be easy to use for common use-cases but is highly flexible in how it can process requests for those that need extensibility. For common uses such as serving files from a directory or simple URL matching to run LV code, the examples should be referenced. Examples will demonstrate the much smaller scope of details that are required for using those features than the rest of this readme covers.
+
+The following is all that is needed to have a LabVIEW application serve files from a folder relative to the project/executable:
+![Simple File Serving Example](https://raw.githubusercontent.com/illuminated-g/lv-http-server/main/Documentation/images/simplefileserve.png "Simple File Serving Example")
+
+If there is functionality that should be counted among the "common" use-cases but isn't available, feel free to submit an issue describing the functionality.
+
+The processing flow is modelled after Symfony PHP's event subscription system and will be more familiar to backend developers that work with modern web frameworks.
+
+<br />
+
 # Processing Flow
 
 This server provides flexibility and extensibility via a handful of specific request processing steps that can have additional functionality plugged in. The following flowchart maps out the processing flow.
 
-<details open>
-    <summary>Expand for Processing Flowchart</summary>
-
 ![Request Processing Flowchart](https://raw.githubusercontent.com/illuminated-g/lv-http-server/main/Documentation/images/Request%20Flow.drawio.png "Request Processing Flowchart")
-</details>
 
 <br/>
 
@@ -50,11 +60,17 @@ To provide a consistent behavior for handlers with the same priority, a second h
 
 Built-in handlers and controllers will typically have higher numeric values for their priority to allow more room for organizing custom handlers into higher priorities (lower numeric values). Some of them will support customizing their priority when needed.
 
+<br/>
+
 ## Steps Types
+
+<br/>
 
 ### Connection Filtering
 
 Connection Handlers support behavior such as client rate limiting and client blacklisting in a way that is more performant than sending a full response. There is a specific HTTP response for rate limiting that should be used if possible so the client knows to slow down. This step should not be considered for use as a security feature since spoofing network identities is fairly easy. Any actions taken here should only be considered for performance considerations.
+
+<br/>
 
 ### Request Initialization
 
@@ -71,15 +87,21 @@ Triggering an Early Response by returning a non-empty Response instance shortcut
 
 Any information that's relevant to a specific controller should be handled in Controller Initialization or the Controller itself and information related to a specific resource should be handled in a Controller.
 
+<br/>
+
 ### Request Routing
 
 Routing Handlers are called to determine which Controller should be used to respond to the resource request. The resource path will typically be used to determine Controller selection and as such all Controllers are expected to provide a Regular Expression identifying the path(s) they generate Responses for and there is a built-in handler that runs to check the path against the regular expressions. Custom Routing Handlers may select Controllers by other criteria such as a specific hard-coded path, query parameters, headers, or anything else that fits the needs of the application.
 
 If a controller is not identified after running through all registered handlers then it will be treated as an error and the processing will perform exception handling since no Controller was specified to generate a Response.
 
+<br/>
+
 ### Controller Initialization
 
 This step runs registered Controller Handlers that can perform additional initialization and creation of Arguments to be used by the selected Controller. The idea is to have as much information available before the Controller is run to separate initialization from execution when feasible. Sharing initialization routines across several Controllers is also supported by this design.
+
+<br/>
 
 ### Controller Execution
 
@@ -87,17 +109,23 @@ The selected Controller is called to generate a Response to the Request. Not gen
 
 Individual Controllers should avoid setting values in a Response that apply to multiple controllers or the entire server. For instance, if the entire server should set a CORS header, that should be handled in Response Handling instead of being set by Controllers.
 
+<br/>
+
 ### Response Handling
 
 Response Handlers can be written to apply to specific Response types by attempting to cast the Reponse instance to the specific type. They can also apply to all Responses indiscriminently which is useful for tasks like setting CORS headers. Lastly, a Response Handler has the option to completely replace the Response generated by a Controller or purposefully returning an error based on the Response. Since this wastes effort performed by a Controller this is generally only useful for sharing error handling across multiple Controllers, such as verifying that a file for a FileResponse exists.
 
 This step is the last chance to modify the Response before it is sent to the client. As soon as all Response Handlers are run and an error isn't generated, the Response will be sent to the client.
 
+<br/>
+
 ### Cleanup
 
 Complete Handlers should be used to share end-of-processing operations across multiple Controller types or whenever an action should be performed after the Response has already been sent to the client. An example would be generating an email or report but allowing the response to be sent before the lengthy operation so the client isn't left waiting and the user/app experience is much snappier. Another use-case is performing additional detailed logging for the request.
 
 After this step, processing will complete and errors returned will be logged to the Trace Log though they will not trigger exception handling since there is no longer a connected client to respond to. Unlike other steps, a handler in this step returning an error does not skip the remaining handlers.
+
+<br/>
 
 ### Exception Handling ###
 
@@ -108,9 +136,13 @@ An example of how this supports extensibility is a higher priority Exception Han
 After the Handlers are run there are several possible results. If a Handler cleared the error then that signifies that the Reponse it returned should be sent to the client. If the error was not cleared then a generic 500 error will be sent to the client and if the server was configured with debugging enabled then the full error message will be sent in the response.
 >***Sending error messages has the potential to inadvertently reveal sensitive system information to the client. Debugging should never be enabled in a publicly accessible system!***
 
+<br/>
+
 # Debugging
 
 The HTTP Server has a few debugging and logging features built-in though unlike most other web servers there isn't a default location to save logs to disk. Any built-in logging will be accessible during run-time and can be configured to use logging paths by the containing application.
 
 One of the key features for debugging the request processing flow is the Trace Log:
-![Request Trace Log](https://raw.githubusercontent.com/illuminated-g/lv-http-server/main/Documentation/images/tracelog.png "Request Trace Log")
+![Request Trace Log](https://raw.githubusercontent.com/illuminated-g/lv-http-server/main/Documentation/images/tracelog.png "Trace Log Strict Type Def")
+
+This shows information about the client making the request, each of the steps that occurred during processing, and the response details. It will highlight any steps that return errors that would cause exception flows to be triggered. For Handlers that return an item, such as request initialization handlers returning an Early Reponse or Controllers returning the main Response, the type of the returned item is saved. The trace log also stores the execution time of each step or call and the overall processing duration for determining processing performance and which steps may be causing bottle-necks.
