@@ -43,7 +43,7 @@ The only point of this handler is to verify that the specified file exists when 
 
 ## Priority
 
-All controllers and handlers have a priority assigned to control what order they are run in. This is a U16 value and defaults to 10,000. This priority value can be changed by overriding the *Priority.vi* member and providing a different value. Handlers will be run starting from lower priority numeric values to higher values. (Lower number = higher priority).
+All controllers and handlers have a priority assigned to control what order they are run in. This is a U16 value and defaults to 10,000. This priority value can be changed by overriding the *Priority.vi* member and providing a different value. Higher priority Handlers have a lower numeric value and lower priority Handlers have a higher numeric value; they are sorted in ascending numeric value.
 
 To provide a consistent behavior for handlers with the same priority, a second half of the priority is assigned based on the order handlers are registered. These two U16 values are combined into a single U32 priority value with the value from *Priority.vi* being the more significant half.
 
@@ -104,4 +104,5 @@ Except for Cleanup, any Handler or Controller that returns an error will trigger
 
 An example of how this supports extensibility is a higher priority Exception Handler (lower numeric value) that turns several different related error codes into a single error code so that a single lower priority (higher numeric value) Handler can perform the handling of related errors without needing to know all the errors it should perform its action for. This is especially useful for extending existing functionality with new processing and Controllers that may generate new error codes but existing Exception Handling should be utilized. The new Handlers and Controllers can be used with a new Exception Handler that translates the new expected codes into already handled codes.
 
-After the Handlers are run there are several possible results. If a Handler cleared the error then that signifies that the Reponse it returned should be sent to the client. If the error was not cleared then a generic 500 error will be sent to the client and if the server was configured with debugging enabled then the full error message will be sent in the response. ***Sending error messages has the potential to reveal sensitive information to the client and debugging should never be enabled in a publicly accessible system!*** 
+After the Handlers are run there are several possible results. If a Handler cleared the error then that signifies that the Reponse it returned should be sent to the client. If the error was not cleared then a generic 500 error will be sent to the client and if the server was configured with debugging enabled then the full error message will be sent in the response.
+>***Sending error messages has the potential to inadvertently reveal sensitive system information to the client. Debugging should never be enabled in a publicly accessible system!***
