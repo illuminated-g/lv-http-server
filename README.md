@@ -12,6 +12,7 @@ HTTP Server implementation in LabVIEW. Utilizes IG TCP Streams and provides mech
     - [Response Handling](#response-handling)
     - [Cleanup](#cleanup)
     - [Exception Handling](#exception-handling)
+- [Debugging](#debugging)
 
 # Processing Flow
 
@@ -106,3 +107,10 @@ An example of how this supports extensibility is a higher priority Exception Han
 
 After the Handlers are run there are several possible results. If a Handler cleared the error then that signifies that the Reponse it returned should be sent to the client. If the error was not cleared then a generic 500 error will be sent to the client and if the server was configured with debugging enabled then the full error message will be sent in the response.
 >***Sending error messages has the potential to inadvertently reveal sensitive system information to the client. Debugging should never be enabled in a publicly accessible system!***
+
+# Debugging
+
+The HTTP Server has a few debugging and logging features built-in though unlike most other web servers there isn't a default location to save logs to disk. Any built-in logging will be accessible during run-time and can be configured to use logging paths by the containing application.
+
+One of the key features for debugging the request processing flow is the Trace Log:
+![Request Trace Log](https://raw.githubusercontent.com/illuminated-g/lv-http-server/main/Documentation/images/tracelog.png "Request Trace Log")

@@ -12,9 +12,13 @@
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="Documentation" Type="Folder">
-			<Item Name="Request Flow.drawio.png" Type="Document" URL="../Documentation/Request Flow.drawio.png"/>
+			<Item Name="fileexistchecker.png" Type="Document" URL="../Documentation/images/fileexistchecker.png"/>
+			<Item Name="Request Flow.drawio.png" Type="Document" URL="../Documentation/images/Request Flow.drawio.png"/>
 		</Item>
 		<Item Name="Test" Type="Folder">
+			<Item Name="Auth Service" Type="Folder">
+				<Item Name="Test Auth Service.vi" Type="VI" URL="../Test/Test Auth Service.vi"/>
+			</Item>
 			<Item Name="Files" Type="Folder">
 				<Item Name="www" Type="Folder">
 					<Item Name="ig.png" Type="Document" URL="../Test/FileServe/www/ig.png"/>
@@ -63,6 +67,7 @@
 				<Item Name="HTTP Utils.lvlib" Type="Library" URL="/&lt;vilib&gt;/IlluminatedG/IG HTTP Utils/HTTP Utils/HTTP Utils.lvlib"/>
 				<Item Name="Longest Line Length in Pixels.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Longest Line Length in Pixels.vi"/>
 				<Item Name="LVBoundsTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVBoundsTypeDef.ctl"/>
+				<Item Name="LVMapReplaceAction.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVMapReplaceAction.ctl"/>
 				<Item Name="LVRectTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVRectTypeDef.ctl"/>
 				<Item Name="NI_FileType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/lvfile.llb/NI_FileType.lvlib"/>
 				<Item Name="NI_PackedLibraryUtility.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/LVLibp/NI_PackedLibraryUtility.lvlib"/>
