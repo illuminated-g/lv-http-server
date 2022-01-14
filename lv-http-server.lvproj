@@ -11,6 +11,9 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
+		<Item Name="Documentation" Type="Folder">
+			<Item Name="Request Flow.drawio.png" Type="Document" URL="../Documentation/Request Flow.drawio.png"/>
+		</Item>
 		<Item Name="Test" Type="Folder">
 			<Item Name="Files" Type="Folder">
 				<Item Name="www" Type="Folder">
