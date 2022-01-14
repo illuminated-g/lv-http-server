@@ -15,6 +15,9 @@
 			<Item Name="fileexistchecker.png" Type="Document" URL="../Documentation/images/fileexistchecker.png"/>
 			<Item Name="Request Flow.drawio.png" Type="Document" URL="../Documentation/images/Request Flow.drawio.png"/>
 		</Item>
+		<Item Name="HTTP Server" Type="Folder" URL="../HTTP Server">
+			<Property Name="NI.DISK" Type="Bool">true</Property>
+		</Item>
 		<Item Name="Test" Type="Folder">
 			<Item Name="Auth Service" Type="Folder">
 				<Item Name="Test Auth Service.vi" Type="VI" URL="../Test/Test Auth Service.vi"/>
@@ -36,7 +39,6 @@
 				<Item Name="Test Simple Server.vi" Type="VI" URL="../Test/Test Simple Server.vi"/>
 			</Item>
 		</Item>
-		<Item Name="HTTP Server.lvlib" Type="Library" URL="../HTTP Server/HTTP Server.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="1D String Array to Delimited String.vi" Type="VI" URL="/&lt;vilib&gt;/AdvancedString/1D String Array to Delimited String.vi"/>
