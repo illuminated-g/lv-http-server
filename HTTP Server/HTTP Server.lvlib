@@ -53,11 +53,13 @@
 		</Item>
 		<Item Name="Handlers" Type="Folder">
 			<Item Name="Exceptions" Type="Folder">
+				<Item Name="BadRequestException.lvclass" Type="LVClass" URL="../BadRequestException/BadRequestException.lvclass"/>
 				<Item Name="FileNotFoundException.lvclass" Type="LVClass" URL="../FileNotFoundException/FileNotFoundException.lvclass"/>
 			</Item>
 			<Item Name="ControllerIndexedPathParams Handler.lvclass" Type="LVClass" URL="../ControllerIndexedPathParams Handler/ControllerIndexedPathParams Handler.lvclass"/>
 			<Item Name="FileExistChecker.lvclass" Type="LVClass" URL="../FileExistChecker/FileExistChecker.lvclass"/>
 			<Item Name="PathRegex Router.lvclass" Type="LVClass" URL="../PathRegex Router/PathRegex Router.lvclass"/>
+			<Item Name="PathValidation.lvclass" Type="LVClass" URL="../PathValidation/PathValidation.lvclass"/>
 		</Item>
 	</Item>
 	<Item Name="Responses" Type="Folder">
