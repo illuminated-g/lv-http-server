@@ -1,4 +1,4 @@
-HTTP Server implementation in LabVIEW. Utilizes IG TCP Streams and provides mechanisms akin to Web Services.
+HTTP Server implementation in LabVIEW. Utilizes IG TCP Streams and provides mechanisms akin to Web Services. This project is under active development and as such should not be considered a secure web server implementation. We'll do our best to document the kinds of attacks we do try to protect against and by using this project you promise to educate yourself about web application security, especially when plugging in custom functionality which we can't prevent from circumventing the protections we are able to implement.
 
 - [Overview](#overview)
 - [Processing Flow](#processing-flow)
