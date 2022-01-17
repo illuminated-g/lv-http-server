@@ -16,3 +16,4 @@
 *.lvlps
 .cache/
 /Antidoc-Output
+/Test/Sessions/lv_session/*
