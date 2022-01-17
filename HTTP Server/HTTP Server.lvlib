@@ -46,6 +46,21 @@
 		<Item Name="StandardFileServe.lvclass" Type="LVClass" URL="../StandardFileServe/StandardFileServe.lvclass"/>
 	</Item>
 	<Item Name="Data Types" Type="Folder">
+		<Item Name="Steps" Type="Folder">
+			<Item Name="Cleanup Inputs.ctl" Type="VI" URL="../Cleanup Inputs.ctl"/>
+			<Item Name="Cleanup Outputs.ctl" Type="VI" URL="../Cleanup Outputs.ctl"/>
+			<Item Name="Controller Init Objects.ctl" Type="VI" URL="../Controller Init Objects.ctl"/>
+			<Item Name="Controller Inputs.ctl" Type="VI" URL="../Controller Inputs.ctl"/>
+			<Item Name="Controller Outputs.ctl" Type="VI" URL="../Controller Outputs.ctl"/>
+			<Item Name="Exception Inputs.ctl" Type="VI" URL="../Exception Inputs.ctl"/>
+			<Item Name="Exception Outputs.ctl" Type="VI" URL="../Exception Outputs.ctl"/>
+			<Item Name="Request Inputs.ctl" Type="VI" URL="../Request Inputs.ctl"/>
+			<Item Name="Request Outputs.ctl" Type="VI" URL="../Request Outputs.ctl"/>
+			<Item Name="Response Inputs.ctl" Type="VI" URL="../Response Inputs.ctl"/>
+			<Item Name="Response Outputs.ctl" Type="VI" URL="../Response Outputs.ctl"/>
+			<Item Name="Routing Inputs.ctl" Type="VI" URL="../Routing Inputs.ctl"/>
+			<Item Name="Routing Outputs.ctl" Type="VI" URL="../Routing Outputs.ctl"/>
+		</Item>
 		<Item Name="Processing Step.ctl" Type="VI" URL="../Processing Step.ctl"/>
 		<Item Name="Trace Item.ctl" Type="VI" URL="../Trace Item.ctl"/>
 		<Item Name="Trace Log.ctl" Type="VI" URL="../Trace Log.ctl"/>
