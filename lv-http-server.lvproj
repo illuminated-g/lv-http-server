@@ -12,8 +12,7 @@
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="Documentation" Type="Folder">
-			<Item Name="fileexistchecker.png" Type="Document" URL="../Documentation/images/fileexistchecker.png"/>
-			<Item Name="Request Flow.drawio.png" Type="Document" URL="../Documentation/images/Request Flow.drawio.png"/>
+			<Item Name="Priorities.txt" Type="Document" URL="../Documentation/Priorities.txt"/>
 		</Item>
 		<Item Name="Test" Type="Folder">
 			<Item Name="Auth Service" Type="Folder">
@@ -32,6 +31,10 @@
 				<Item Name="Test Query Auth.vi" Type="VI" URL="../Test/Test Query Auth.vi"/>
 				<Item Name="TestQueryAuth.lvclass" Type="LVClass" URL="../Test/TestQueryAuth/TestQueryAuth.lvclass"/>
 			</Item>
+			<Item Name="Session" Type="Folder">
+				<Item Name="Test Sessions Controller.lvclass" Type="LVClass" URL="../Test Sessions Controller/Test Sessions Controller.lvclass"/>
+				<Item Name="Test Sessions.vi" Type="VI" URL="../Test/Test Sessions.vi"/>
+			</Item>
 			<Item Name="Single Page" Type="Folder">
 				<Item Name="Test Index.lvclass" Type="LVClass" URL="../Test/Test Index/Test Index.lvclass"/>
 				<Item Name="Test Simple Server.vi" Type="VI" URL="../Test/Test Simple Server.vi"/>
@@ -42,11 +45,13 @@
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="1D String Array to Delimited String.vi" Type="VI" URL="/&lt;vilib&gt;/AdvancedString/1D String Array to Delimited String.vi"/>
 				<Item Name="Application Directory.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Application Directory.vi"/>
+				<Item Name="Base64.lvlib" Type="Library" URL="/&lt;vilib&gt;/IlluminatedG/lv-web-crypto/lv-base64/Base64.lvlib"/>
 				<Item Name="BuildHelpPath.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/BuildHelpPath.vi"/>
 				<Item Name="Check if File or Folder Exists.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Check if File or Folder Exists.vi"/>
 				<Item Name="Check Special Tags.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Check Special Tags.vi"/>
 				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
 				<Item Name="Convert property node font to graphics font.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Convert property node font to graphics font.vi"/>
+				<Item Name="Crypto.lvlib" Type="Library" URL="/&lt;vilib&gt;/IlluminatedG/lv-web-crypto/lv-crypto/Crypto/Crypto.lvlib"/>
 				<Item Name="Delimited String to 1D String Array.vi" Type="VI" URL="/&lt;vilib&gt;/AdvancedString/Delimited String to 1D String Array.vi"/>
 				<Item Name="Details Display Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Details Display Dialog.vi"/>
 				<Item Name="DialogType.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/DialogType.ctl"/>
@@ -72,6 +77,7 @@
 				<Item Name="LVRectTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVRectTypeDef.ctl"/>
 				<Item Name="NI_FileType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/lvfile.llb/NI_FileType.lvlib"/>
 				<Item Name="NI_PackedLibraryUtility.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/LVLibp/NI_PackedLibraryUtility.lvlib"/>
+				<Item Name="NI_WebServices.lvlib" Type="Library" URL="/&lt;vilib&gt;/wsapi/NI_WebServices.lvlib"/>
 				<Item Name="Not Found Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Not Found Dialog.vi"/>
 				<Item Name="Search and Replace Pattern.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Search and Replace Pattern.vi"/>
 				<Item Name="Set Bold Text.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set Bold Text.vi"/>

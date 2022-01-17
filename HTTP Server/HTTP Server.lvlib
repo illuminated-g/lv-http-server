@@ -4,37 +4,7 @@
 	<Property Name="NI.Lib.SourceVersion" Type="Int">536903680</Property>
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
-	<Item Name="Callback Types" Type="Folder">
-		<Item Name="Request Callback VI Type.vi" Type="VI" URL="../Request Callback VI Type.vi"/>
-	</Item>
-	<Item Name="Containers" Type="Folder">
-		<Item Name="Arguments.lvclass" Type="LVClass" URL="../Arguments/Arguments.lvclass"/>
-	</Item>
-	<Item Name="Controllers" Type="Folder">
-		<Item Name="StandardFileServe.lvclass" Type="LVClass" URL="../StandardFileServe/StandardFileServe.lvclass"/>
-	</Item>
-	<Item Name="Data Types" Type="Folder">
-		<Item Name="Trace Item.ctl" Type="VI" URL="../Trace Item.ctl"/>
-		<Item Name="Trace Log.ctl" Type="VI" URL="../Trace Log.ctl"/>
-	</Item>
-	<Item Name="Interfaces" Type="Folder">
-		<Item Name="Handlers" Type="Folder">
-			<Item Name="Complete Handler.lvclass" Type="LVClass" URL="../Complete Handler/Complete Handler.lvclass"/>
-			<Item Name="Connection Handler.lvclass" Type="LVClass" URL="../Connection Handler/Connection Handler.lvclass"/>
-			<Item Name="Controller Handler.lvclass" Type="LVClass" URL="../Controller Handler/Controller Handler.lvclass"/>
-			<Item Name="Exception Handler.lvclass" Type="LVClass" URL="../Exception Handler/Exception Handler.lvclass"/>
-			<Item Name="Request Handler.lvclass" Type="LVClass" URL="../Request Handler/Request Handler.lvclass"/>
-			<Item Name="Response Handler.lvclass" Type="LVClass" URL="../Response Handler/Response Handler.lvclass"/>
-			<Item Name="Route Handler.lvclass" Type="LVClass" URL="../Route Handler/Route Handler.lvclass"/>
-		</Item>
-		<Item Name="Controller.lvclass" Type="LVClass" URL="../Controller/Controller.lvclass"/>
-		<Item Name="Handler.lvclass" Type="LVClass" URL="../Handler/Handler.lvclass"/>
-		<Item Name="Service.lvclass" Type="LVClass" URL="../Service/Service.lvclass"/>
-	</Item>
-	<Item Name="Logging" Type="Folder">
-		<Item Name="RequestTraceLog.lvclass" Type="LVClass" URL="../RequestTraceLog/RequestTraceLog.lvclass"/>
-	</Item>
-	<Item Name="Private" Type="Folder">
+	<Item Name="_Private" Type="Folder">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 		<Item Name="Data Types" Type="Folder">
 			<Item Name="Maps" Type="Folder">
@@ -60,7 +30,42 @@
 			<Item Name="FileExistChecker.lvclass" Type="LVClass" URL="../FileExistChecker/FileExistChecker.lvclass"/>
 			<Item Name="PathRegex Router.lvclass" Type="LVClass" URL="../PathRegex Router/PathRegex Router.lvclass"/>
 			<Item Name="PathValidation.lvclass" Type="LVClass" URL="../PathValidation/PathValidation.lvclass"/>
+			<Item Name="Request Session Handler.lvclass" Type="LVClass" URL="../Request Session Handler/Request Session Handler.lvclass"/>
+			<Item Name="Session Cleanup Handler.lvclass" Type="LVClass" URL="../Session Cleanup Handler/Session Cleanup Handler.lvclass"/>
+			<Item Name="Session Response Handler.lvclass" Type="LVClass" URL="../Session Response Handler/Session Response Handler.lvclass"/>
 		</Item>
+		<Item Name="Sessions" Type="Folder"/>
+	</Item>
+	<Item Name="Callback Types" Type="Folder">
+		<Item Name="Request Callback VI Type.vi" Type="VI" URL="../Request Callback VI Type.vi"/>
+	</Item>
+	<Item Name="Containers" Type="Folder">
+		<Item Name="Arguments.lvclass" Type="LVClass" URL="../Arguments/Arguments.lvclass"/>
+	</Item>
+	<Item Name="Controllers" Type="Folder">
+		<Item Name="StandardFileServe.lvclass" Type="LVClass" URL="../StandardFileServe/StandardFileServe.lvclass"/>
+	</Item>
+	<Item Name="Data Types" Type="Folder">
+		<Item Name="Processing Step.ctl" Type="VI" URL="../Processing Step.ctl"/>
+		<Item Name="Trace Item.ctl" Type="VI" URL="../Trace Item.ctl"/>
+		<Item Name="Trace Log.ctl" Type="VI" URL="../Trace Log.ctl"/>
+	</Item>
+	<Item Name="Interfaces" Type="Folder">
+		<Item Name="Handlers" Type="Folder">
+			<Item Name="Complete Handler.lvclass" Type="LVClass" URL="../Complete Handler/Complete Handler.lvclass"/>
+			<Item Name="Connection Handler.lvclass" Type="LVClass" URL="../Connection Handler/Connection Handler.lvclass"/>
+			<Item Name="Controller Handler.lvclass" Type="LVClass" URL="../Controller Handler/Controller Handler.lvclass"/>
+			<Item Name="Exception Handler.lvclass" Type="LVClass" URL="../Exception Handler/Exception Handler.lvclass"/>
+			<Item Name="Request Handler.lvclass" Type="LVClass" URL="../Request Handler/Request Handler.lvclass"/>
+			<Item Name="Response Handler.lvclass" Type="LVClass" URL="../Response Handler/Response Handler.lvclass"/>
+			<Item Name="Route Handler.lvclass" Type="LVClass" URL="../Route Handler/Route Handler.lvclass"/>
+		</Item>
+		<Item Name="Controller.lvclass" Type="LVClass" URL="../Controller/Controller.lvclass"/>
+		<Item Name="Handler.lvclass" Type="LVClass" URL="../Handler/Handler.lvclass"/>
+		<Item Name="Service.lvclass" Type="LVClass" URL="../Service/Service.lvclass"/>
+	</Item>
+	<Item Name="Logging" Type="Folder">
+		<Item Name="RequestTraceLog.lvclass" Type="LVClass" URL="../RequestTraceLog/RequestTraceLog.lvclass"/>
 	</Item>
 	<Item Name="Responses" Type="Folder">
 		<Item Name="File Response.lvclass" Type="LVClass" URL="../File Response/File Response.lvclass"/>
@@ -68,4 +73,5 @@
 	</Item>
 	<Item Name="Services" Type="Folder"/>
 	<Item Name="Server.lvclass" Type="LVClass" URL="../Server/Server.lvclass"/>
+	<Item Name="Session.lvclass" Type="LVClass" URL="../Session/Session.lvclass"/>
 </Library>

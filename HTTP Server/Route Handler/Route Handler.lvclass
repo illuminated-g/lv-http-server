@@ -18,12 +18,22 @@
 		<Item Name="HTTP Server.lvlib:Handler.lvclass" Type="Parent" URL="../../Handler/Handler.lvclass"/>
 	</Item>
 	<Item Name="Determine Controller.vi" Type="VI" URL="../Determine Controller.vi">
-		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!'"!!!!#A!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!$R!=!!?!!!G%5B56&amp;!A5W6S&gt;G6S,GRW&lt;'FC%E.P&lt;H2S&lt;WRM:8)O&lt;(:D&lt;'&amp;T=Q!!#E.P&lt;H2S&lt;WRM:8)!!%2!=!!?!!!J%5B56&amp;!A5W6S&gt;G6S,GRW&lt;'FC&amp;6*P&gt;82F)%BB&lt;G2M:8)O&lt;(:D&lt;'&amp;T=Q!25G^V&gt;'5A3'&amp;O:'RF=C"P&gt;81!)%"1!!-!!!!"!!)4:8*S&lt;X)A;7YA+'ZP)'6S=G^S+1"%1(!!(A!!+2&amp;)6&amp;21)&amp;.F=H:F=CZM&gt;GRJ9B63&lt;X6U:3")97ZE&lt;'6S,GRW9WRB=X-!%&amp;*P&gt;82F)%BB&lt;G2M:8)A;7Y!!&amp;1!]!!-!!-!"!!&amp;!!9!"!!%!!1!"!!(!!1!"!!)!A!!?!!!$1A!!!!!!!!*!!!!D1M!!!!!!!!!!!!!!!!!!!!!!!!)!!!!!!!!!!!!!!#1!!!!!!%!#1!!!!!</Property>
+		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!)&gt;!!!!$1!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!0%"Q!"Y!!#923&amp;255#"4:8*W:8)O&lt;(:M;7)31W^O&gt;(*P&lt;'RF=CZM&gt;G.M98.T!!!+1W^O&gt;(*P&lt;'RF=A!!.%"Q!"Y!!#)13&amp;255#"6&gt;'FM=SZM&gt;GRJ9A^3:8&amp;V:8.U,GRW9WRB=X-!!!&gt;3:8&amp;V:8.U!!1!!!!Y1(!!(A!!*2&amp;)6&amp;21)&amp;.F=H:F=CZM&gt;GRJ9B&amp;"=G&gt;V&lt;76O&gt;(-O&lt;(:D&lt;'&amp;T=Q!*18*H&gt;7VF&lt;H2T!$R!=!!?!!!F%5B56&amp;!A5W6S&gt;G6S,GRW&lt;'FC%5&amp;S:X6N:7ZU=SZM&gt;G.M98.T!!R"=G&gt;V&lt;76O&gt;(-A37Y!!#"!5!!$!!!!!1!#%W6S=G^S)'FO)#BO&lt;S"F=H*P=CE!/%"Q!"Y!!#)13&amp;255#"6&gt;'FM=SZM&gt;GRJ9A^3:8&amp;V:8.U,GRW9WRB=X-!!!J3:8&amp;V:8.U)%FO!!"%1(!!(A!!+2&amp;)6&amp;21)&amp;.F=H:F=CZM&gt;GRJ9B63&lt;X6U:3")97ZE&lt;'6S,GRW9WRB=X-!%&amp;*P&gt;82F)%BB&lt;G2M:8)A;7Y!!&amp;1!]!!-!!-!"!!&amp;!!9!"A!(!!9!#!!*!!9!#A!,!A!!?!!!$1A!!!E!!!!*!!!!!!!!!!!!!!!*!!!!!!!!!"!!!!!)!!!!!!!!!"!!!!#1!!!!!!%!$!!!!!!</Property>
 		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
-		<Property Name="NI.ClassItem.Flags" Type="Int">0</Property>
+		<Property Name="NI.ClassItem.Flags" Type="Int">1090519168</Property>
 		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">false</Property>
 		<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
 		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
-		<Property Name="NI.ClassItem.State" Type="Int">1074274816</Property>
+		<Property Name="NI.ClassItem.State" Type="Int">1342714368</Property>
+	</Item>
+	<Item Name="Processing Step.vi" Type="VI" URL="../Processing Step.vi">
+		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!(A!!!!#A!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!*M!]1!!!!!!!!!#%5B56&amp;!A5W6S&gt;G6S,GRW&lt;'FC%V"S&lt;W.F=X.J&lt;G=A5X2F=#ZD&gt;'Q!&lt;5!7!!A+1W^O&lt;G6D&gt;'FP&lt;A&gt;3:8&amp;V:8.U"V*P&gt;82J&lt;G=01W^O&gt;(*P&lt;'RF=C"*&lt;GFU#E.P&lt;H2S&lt;WRM:8))5G6T='^O=W5(1WRF97ZV=!F&amp;?'.F=(2J&lt;WY!!!^1=G^D:8.T;7ZH)&amp;.U:8!!2%"Q!"Y!!#E23&amp;255#"4:8*W:8)O&lt;(:M;7)65G^V&gt;'5A3'&amp;O:'RF=CZM&gt;G.M98.T!"&amp;3&lt;X6U:3")97ZE&lt;'6S)'^V&gt;!!A1&amp;!!!Q!!!!%!!B.F=H*P=C"J&lt;C!I&lt;G]A:8*S&lt;X)J!%2!=!!?!!!J%5B56&amp;!A5W6S&gt;G6S,GRW&lt;'FC&amp;6*P&gt;82F)%BB&lt;G2M:8)O&lt;(:D&lt;'&amp;T=Q!15G^V&gt;'5A3'&amp;O:'RF=C"J&lt;A!!6!$Q!!Q!!Q!%!!5!"A!%!!1!"!!%!!=!"!!%!!A#!!"Y!!!.#!!!!!!!!!E!!!#.#Q!!!!!!!!!!!!!!!!!!!!!!!!A!!!!!!!!!!!!!!*!!!!!!!1!*!!!!!!</Property>
+		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
+		<Property Name="NI.ClassItem.Flags" Type="Int">1073741834</Property>
+		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">false</Property>
+		<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
+		<Property Name="NI.ClassItem.MustOverride" Type="Bool">false</Property>
+		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
+		<Property Name="NI.ClassItem.State" Type="Int">1082667520</Property>
 	</Item>
 </LVClass>

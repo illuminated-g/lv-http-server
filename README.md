@@ -1,6 +1,14 @@
-HTTP Server implementation in LabVIEW. Utilizes IG TCP Streams and provides mechanisms akin to Web Services. This project is under active development and as such should not be considered a secure web server implementation. We'll do our best to document the kinds of attacks we do try to protect against and by using this project you promise to educate yourself about web application security, especially when plugging in custom functionality which we can't prevent from circumventing the protections we are able to implement.
+HTTP Server implementation in LabVIEW. This project is under active development and as such should not be considered a secure web server implementation. We'll do our best to document the kinds of attacks we do try to protect against and by using this project you promise to educate yourself about web application security, especially when plugging in custom functionality which we can't prevent from circumventing the protections we are able to implement.
 
+- [Usage Agreement & Regulations Compliance Statement](#usage-agreement--regulations-compliance-statement)
 - [Overview](#overview)
+  - [Request Processing Overview](#request-processing-overview)
+  - [Services](#services)
+- [Security First Design](#security-first-design)
+- [Sessions](#sessions)
+  - [Session ID](#session-id)
+  - [Session Expiry](#session-expiry)
+  - [Session Variables](#session-variables)
 - [Processing Flow](#processing-flow)
 - [Handlers and Controllers](#handlers-and-controllers)
   - [Priority](#priority)
@@ -15,6 +23,12 @@ HTTP Server implementation in LabVIEW. Utilizes IG TCP Streams and provides mech
     - [Exception Handling](#exception-handling)
 - [Debugging](#debugging)
 
+# Usage Agreement & Regulations Compliance Statement
+
+ Usage of this code as provided does not constitute any guarantee of protection or compliance with public internet and private network regulations. Data protection consent regulations, such as GPDR, may only be important for public facing websites that may store user information, even anonymous, and even if just for details such as theming and locale preferences. For built-in capabilites, the mechanisms that can be enabled in this server will likely not trigger consent for regulations, such as GPDR, as the internal purposes are only for identifying preferences and a logged-in user which is usually defined as "strictly necessary". However, since this server allows plugging in additional functionality it is impossible to predict when consent and compliance requirements will be necessary for sites using this server implementation. Therefore it is up to developers using this library to familiarize themselves with their local and client facing regulations related to data protections that may result during client interactions that can identify an individual. These statements assume that non-public uses would already be covered under employer IT agreements and it is up to the user of this library to validate the correctness of these assumptions with their IT department. This document aims to clearly describe the security and privacy mechanisms available to developers, however it is up to those developers to follow the documentation available in-source and in accompanying documentation and if documentation is lacking, to do their own research on web security and to understand the code.
+
+ If there are any questions regarding the previous paragraph, please contact the owner of this repository. Contacting the owner of this repository is not a guarantee of a response and it remains the responsibility of the user of this code for all known and unknown regulations that may relate to the usage of this code.
+
 # Overview
 
 This LV Http Server is intended to both be easy to use for common use-cases but is highly flexible in how it can process requests for those that need extensibility. For common uses such as serving files from a directory or simple URL matching to run LV code, the examples should be referenced. Examples will demonstrate the much smaller scope of details that are required for using those features than the rest of this readme covers.
@@ -24,9 +38,51 @@ The following is all that is needed to have a LabVIEW application serve files fr
 
 If there is functionality that should be counted among the "common" use-cases but isn't available, feel free to submit an issue describing the functionality.
 
-The processing flow is modelled after Symfony PHP's event subscription system and will be more familiar to backend developers that work with modern web frameworks.
+## Request Processing Overview
 
-<br />
+The processing flow is modelled after Symfony PHP's event subscription system and will be more familiar to backend developers that work with modern web frameworks. This HTTP server provides interfaces to implement custom Handlers and Controllers. Handlers represent small processing steps to select and initialize how a Request is processed and a Response is generated. Controllers are the main mechanism for generating the primary Response to a request. As examples, there might be a Handler whose sole purpose is to identify a user account attached to the request session and then a Controller could be provided that responds to a specific URL path and can use the request and user information initialized prior to the controller being run to generate the appropriate response.
+
+## Services
+
+In addition to Handlers and Controllers, Services are another pluggable mechanism provided by the server. There are two main differences between services and handlers:
+
+1. Handlers utilize HTTP and HTTP aware abstractions to manage data relevant to being a web server whereas Services should be implemented to not know about HTTP mechanisms and only rely on application types and business logic.
+2. Each handler applies to a specific step in the processing flow and services can be useful (and are available) throughout the entire processing flow.
+
+This means that the relationship between handlers/controllers and services should be that handlers and controllers change the HTTP format of the requests into application data types and can then use those converted types with services to perform the business logic. Additionally, services may provide related groupings of functionality, such as user creation, retrieval, and management, which would be useful during request initialization, controller operation, and response handling.
+
+# Security First Design
+
+One of the design goals of this server is to be as secure as possible with default configurations by exposing the fewest number of attack vectors feasible (and known). This results in the following default configuration:
+
+- All effort to properly validate and use encoding of HTTP request and response components is done.
+- Sessions are disabled. (No client information is tracked)
+- CORS is disabled.
+- CSRF mitigations are enabled when using built-in form mechamisms.
+
+***Proper security, even in the default configurations, is highly dependant on proper implementation. Please file issues on the repository as soon as an improper design/implementation is discovered or if there should be a different default configuration.***
+
+If there is a potential attack vector that hasn't been addressed please create an issue with a link to documentation about the method (such as a link to an OWASP page) and if you're feeling particularly helpful you can create a Pull Request of an implementation for review.
+
+Another aim of this project is to ensure where possible that the utilities necessary to facilitate safe implementations are available, as much as possible. Please submit issues for missing utilities, such as encoding formats or data validation, that will make implementing secure handlers and controllers easier for developers.
+
+# Sessions
+
+Sessions are implemented to be able to securely support user logins and client variables. Like most of the rest of the server, session storage is implemented abstractly to allow customizing how sessions are stored. There is a default implementation of persisting session values to individual files on disk and other implementations (Sqlite, Databases, Redis?) are possible if more performance or management capabilities are required.
+
+Sessions do not require logins and can be used to store preferences even for anonymized/guest clients. Every session gets assigned a randomized value to identify the session that gets sent to the client as a cookie and then variables attached to the session will be saved by the server depending on the concrete implementation used. Then in successive requests when the client supplies the sessions ID by sending the session cookie with it, the session is revalidated by the server and the saved session values will be available during the request processing.
+
+## Session ID
+
+Session IDs typically are not used by any handler or controller code directly but are available to support additional resource validation and security features. Session IDs are Base64-Url encoded SHA-256 hashes of a random 128-bit string. Then the ID is hashed and encoded again for storage on the server. When requests come in with a session ID, it is re-hashed and encoded to be looked up and validated. Session IDs actually sent to the client, are only ever saved on the server in their hashed form, at least by the built-in mechanisms, to prevent leaking accessible sessions if the session storage is ever compromised.
+
+## Session Expiry
+
+All client sessions will automatically expire, with a default timespan of 3 days. This can be configured with the server or during session creation to change how long sessions remain valid. Upon receiving a request related to an expired session, saved session data will be removed and a new empty session will be created. When supporting logins, this typically represents automatic logout of a stale login session and the client would be directed to login again. To prevent losing session data in an application, sessions can be "refreshed" to generate a new ID and expiry for a session while maintaining the
+
+## Session Variables
+
+The main use for sessions is to save named values that correspond to a specific client. As long as sessions are enabled
 
 # Processing Flow
 
