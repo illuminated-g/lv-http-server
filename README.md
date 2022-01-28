@@ -122,10 +122,14 @@ Built-in handlers and controllers will typically have higher numeric values for 
 ## Routing & Path Parameters
 
 Controllers are generally selected by a regular expression they specify with a dynamic dispatch VI:
+
 ![Controller Path Regex](https://raw.githubusercontent.com/illuminated-g/lv-http-server/main/Documentation/images/pathregex.png "Controller Path Regex")
 
 The built-in regular expression handling breaks out submatches as specific arguments available to the controller:
+
 ![Controller Path Arguments](https://raw.githubusercontent.com/illuminated-g/lv-http-server/main/Documentation/images/pathargs.png "Controller Path Arguments")
+
+Note that with this regular expression implementation, the entire match is returned as element 0 so the first submatch is at 1.
 
 <br/>
 
