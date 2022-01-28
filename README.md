@@ -12,6 +12,7 @@ HTTP Server implementation in LabVIEW. This project is under active development 
 - [Processing Flow](#processing-flow)
 - [Handlers and Controllers](#handlers-and-controllers)
   - [Priority](#priority)
+  - [Routing & Path Parameters](#routing--path-parameters)
   - [Steps Types](#steps-types)
     - [Connection Filtering](#connection-filtering)
     - [Request Initialization](#request-initialization)
@@ -115,6 +116,16 @@ All controllers and handlers have a priority assigned to control what order they
 To provide a consistent behavior for handlers with the same priority, a second half of the priority is assigned based on the order handlers are registered. These two U16 values are combined into a single U32 priority value with the value from *Priority.vi* being the more significant half.
 
 Built-in handlers and controllers will typically have higher numeric values for their priority to allow more room for organizing custom handlers into higher priorities (lower numeric values). Some of them will support customizing their priority when needed.
+
+<br/>
+
+## Routing & Path Parameters
+
+Controllers are generally selected by a regular expression they specify with a dynamic dispatch VI:
+![Controller Path Regex](https://raw.githubusercontent.com/illuminated-g/lv-http-server/main/Documentation/images/pathregex.png "Controller Path Regex")
+
+The built-in regular expression handling breaks out submatches as specific arguments available to the controller:
+![Controller Path Arguments](https://raw.githubusercontent.com/illuminated-g/lv-http-server/main/Documentation/images/pathargs.png "Controller Path Arguments")
 
 <br/>
 
