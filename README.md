@@ -129,7 +129,7 @@ The built-in regular expression handling breaks out submatches as specific argum
 
 ![Controller Path Arguments](https://raw.githubusercontent.com/illuminated-g/lv-http-server/main/Documentation/images/pathargs.png "Controller Path Arguments")
 
-Note that with this regular expression implementation, the entire match is returned as element 0 so the first submatch is at 1.
+Note that with this regular expression implementation, the entire match is returned as element 0 so the first submatch is at 1. There are plans to build an API for generating regular expressions for anyone not comfortable with regexes but providing raw regular expressions will always be available for anyone needing more flexibility.
 
 <br/>
 
