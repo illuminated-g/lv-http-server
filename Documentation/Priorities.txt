@@ -1,5 +1,6 @@
 10 - Request Validation (Typically generate 400 Response)
 100 - Request Session Init
+1000 - WebSocket Handling
 
 10000 - Default
 

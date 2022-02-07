@@ -87,6 +87,9 @@
 		<Item Name="Redirect Response.lvclass" Type="LVClass" URL="../Redirect Response/Redirect Response.lvclass"/>
 	</Item>
 	<Item Name="Services" Type="Folder"/>
+	<Item Name="WebSockets" Type="Folder">
+		<Item Name="WebSocket Handler.lvclass" Type="LVClass" URL="../WebSocket Handler/WebSocket Handler.lvclass"/>
+	</Item>
 	<Item Name="Server.lvclass" Type="LVClass" URL="../Server/Server.lvclass"/>
 	<Item Name="Session.lvclass" Type="LVClass" URL="../Session/Session.lvclass"/>
 </Library>
