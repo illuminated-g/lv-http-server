@@ -18,6 +18,17 @@
 			<Item Name="Auth Service" Type="Folder">
 				<Item Name="Test Auth Service.vi" Type="VI" URL="../Test/Test Auth Service.vi"/>
 			</Item>
+			<Item Name="Basic Forms" Type="Folder">
+				<Item Name="Test Basic Forms.vi" Type="VI" URL="../Test/Test Basic Forms.vi"/>
+			</Item>
+			<Item Name="CSRF Protection" Type="Folder">
+				<Item Name="Test CSRF.vi" Type="VI" URL="../Test/CSRF Protection/Test CSRF.vi"/>
+				<Item Name="TestCSRFController.lvclass" Type="LVClass" URL="../Test/TestCSRFController/TestCSRFController.lvclass"/>
+			</Item>
+			<Item Name="File Upload" Type="Folder">
+				<Item Name="File Upload Controller.lvclass" Type="LVClass" URL="../Test/File Upload Controller/File Upload Controller.lvclass"/>
+				<Item Name="Test File Upload.vi" Type="VI" URL="../Test/File Upload/Test File Upload.vi"/>
+			</Item>
 			<Item Name="Files" Type="Folder">
 				<Item Name="www" Type="Folder">
 					<Item Name="ig.png" Type="Document" URL="../Test/FileServe/www/ig.png"/>
@@ -39,6 +50,14 @@
 				<Item Name="Test Index.lvclass" Type="LVClass" URL="../Test/Test Index/Test Index.lvclass"/>
 				<Item Name="Test Simple Server.vi" Type="VI" URL="../Test/Test Simple Server.vi"/>
 			</Item>
+			<Item Name="WebSocket" Type="Folder">
+				<Item Name="_Callbacks" Type="Folder">
+					<Item Name="Test WS Connection Callback.vi" Type="VI" URL="../HTTP Server/Server/Test WS Connection Callback.vi"/>
+					<Item Name="Test WS Message Callback.vi" Type="VI" URL="../HTTP Server/Server/Test WS Message Callback.vi"/>
+				</Item>
+				<Item Name="Test WebSocket Page Controller.lvclass" Type="LVClass" URL="../Test/Test WebSocket Page Controller/Test WebSocket Page Controller.lvclass"/>
+				<Item Name="Test WebSocket Upgrade.vi" Type="VI" URL="../Test/WebSocket/Test WebSocket Upgrade.vi"/>
+			</Item>
 		</Item>
 		<Item Name="HTTP Server.lvlib" Type="Library" URL="../HTTP Server/HTTP Server.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
@@ -51,6 +70,7 @@
 				<Item Name="Check Special Tags.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Check Special Tags.vi"/>
 				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
 				<Item Name="Convert property node font to graphics font.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Convert property node font to graphics font.vi"/>
+				<Item Name="Create NI GUID.vi" Type="VI" URL="/&lt;vilib&gt;/string/Create NI GUID.vi"/>
 				<Item Name="Crypto.lvlib" Type="Library" URL="/&lt;vilib&gt;/IlluminatedG/lv-web-crypto/lv-crypto/Crypto/Crypto.lvlib"/>
 				<Item Name="Delimited String to 1D String Array.vi" Type="VI" URL="/&lt;vilib&gt;/AdvancedString/Delimited String to 1D String Array.vi"/>
 				<Item Name="Details Display Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Details Display Dialog.vi"/>
@@ -66,6 +86,7 @@
 				<Item Name="General Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/General Error Handler.vi"/>
 				<Item Name="Get LV Class Name.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/LVClass/Get LV Class Name.vi"/>
 				<Item Name="Get String Text Bounds.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Get String Text Bounds.vi"/>
+				<Item Name="Get System Directory.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/sysdir.llb/Get System Directory.vi"/>
 				<Item Name="Get Text Rect.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Get Text Rect.vi"/>
 				<Item Name="GetHelpDir.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/GetHelpDir.vi"/>
 				<Item Name="GetRTHostConnectedProp.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/GetRTHostConnectedProp.vi"/>
@@ -77,6 +98,7 @@
 				<Item Name="LVRectTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVRectTypeDef.ctl"/>
 				<Item Name="NI_FileType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/lvfile.llb/NI_FileType.lvlib"/>
 				<Item Name="NI_PackedLibraryUtility.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/LVLibp/NI_PackedLibraryUtility.lvlib"/>
+				<Item Name="NI_PtbyPt.lvlib" Type="Library" URL="/&lt;vilib&gt;/ptbypt/NI_PtbyPt.lvlib"/>
 				<Item Name="NI_WebServices.lvlib" Type="Library" URL="/&lt;vilib&gt;/wsapi/NI_WebServices.lvlib"/>
 				<Item Name="Not Found Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Not Found Dialog.vi"/>
 				<Item Name="Search and Replace Pattern.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Search and Replace Pattern.vi"/>
@@ -84,8 +106,11 @@
 				<Item Name="Set String Value.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set String Value.vi"/>
 				<Item Name="Simple Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Simple Error Handler.vi"/>
 				<Item Name="Space Constant.vi" Type="VI" URL="/&lt;vilib&gt;/dlg_ctls.llb/Space Constant.vi"/>
+				<Item Name="Stream-Simple-Msg.lvlib" Type="Library" URL="/&lt;vilib&gt;/IlluminatedG/lv-msg-simple/Stream-Simple-Msg/Stream-Simple-Msg.lvlib"/>
 				<Item Name="Stream-TCP.lvlib" Type="Library" URL="/&lt;vilib&gt;/IlluminatedG/lv-stream-tcp/Stream-TCP.lvlib"/>
+				<Item Name="Stream-Websocket.lvlib" Type="Library" URL="/&lt;vilib&gt;/IlluminatedG/IG WebSocket Stream/Stream-Websocket/Stream-Websocket.lvlib"/>
 				<Item Name="Stream.lvlib" Type="Library" URL="/&lt;vilib&gt;/IlluminatedG/lv-stream/Stream.lvlib"/>
+				<Item Name="System Directory Type.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/sysdir.llb/System Directory Type.ctl"/>
 				<Item Name="TagReturnType.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/TagReturnType.ctl"/>
 				<Item Name="Three Button Dialog CORE.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Three Button Dialog CORE.vi"/>
 				<Item Name="Three Button Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Three Button Dialog.vi"/>

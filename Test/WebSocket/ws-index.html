@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>G HTTP Server - WebSocket Test</title>
+    </head>
+
+    <input type="text" id="name" placeholder="Enter your name">
+    <button id="connect">Connect</button>
+    <br><br>
+    <input type="text" id="value" value="" disabled>
+
+    <script>
+        (function () {
+            var nameInput = document.getElementById('name');
+            var connectButton = document.getElementById('connect');
+            var valueField = document.getElementById('value');
+            var sock = null;
+
+            function onConnectClick(evt) {
+                connectButton.disabled = true;
+
+                sock = new WebSocket('ws://localhost:36987/ws');
+                sock.addEventListener('open', onConnect);
+                sock.addEventListener('close', onDisconnect);
+                sock.addEventListener('error', onError);
+                sock.addEventListener('message', onMessage);
+            }
+
+            function onConnect(evt) {
+                console.log('Connected!');
+            }
+
+            function onMessage(evt) {
+                switch (evt.data.id) {
+                    case 'value':
+                        valueField.value = evt.data.data;
+                        break;
+                    
+                    default:
+                        console.log(evt);
+                        break;
+                }
+            }
+
+            function onDisconnect(evt) {
+                connectButton.disabled = false;
+            }
+
+            function onError(evt) {
+                console.log(evt);
+                connectButton.disabled = false;
+            }
+
+            connectButton.addEventListener('click', onConnectClick);
+        })();
+    </script>
+</html>
