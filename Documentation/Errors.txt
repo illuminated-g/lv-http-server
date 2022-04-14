@@ -1,0 +1,3 @@
+-2926  : Not Authorized
+1379   : Failed Authentication
+16554  : Missing login form field

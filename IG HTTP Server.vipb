@@ -1,4 +1,4 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2022-01-15 11:25:16" Modified_Date="2022-04-02 12:38:30" Creator="Localization Tester" Comments="" ID="625f7a63464920ac40ab9325a4bfeb31">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2022-01-15 11:25:16" Modified_Date="2022-04-13 19:15:18" Creator="Localization Tester" Comments="" ID="f1273f6cda9a680055bcfc35d90f80c2">
   <Library_General_Settings>
     <Package_File_Name>IlluminatedG_lib_IG_HTTP_Server</Package_File_Name>
     <Library_Version>1.0.0.4</Library_Version>
@@ -16,7 +16,20 @@
     <Target>LabVIEW</Target>
   </Library_General_Settings>
   <Advanced_Settings>
-    <Package_Dependencies/>
+    <Package_Dependencies>
+      <External_Dependencies>illuminatedg_lib_ig_http_utils &gt;= 1.0.0.24</External_Dependencies>
+      <External_Dependencies>illuminatedg_lib_ig_simple_msg &gt;= 1.0.0.24</External_Dependencies>
+      <External_Dependencies>illuminatedg_lib_ig_stream_base &gt;= 1.1.0.32</External_Dependencies>
+      <External_Dependencies>illuminatedg_lib_ig_tcp_stream &gt;= 0.1.0.29</External_Dependencies>
+      <External_Dependencies>illuminatedg_lib_ig_web&amp;crypto &gt;= 0.1.0.9</External_Dependencies>
+      <External_Dependencies>illuminatedg_lib_ig_websocket_stream &gt;= 1.0.0.4</External_Dependencies>
+      <Direct_Dependencies>illuminatedg_lib_ig_http_utils-1.0.0.24</Direct_Dependencies>
+      <Direct_Dependencies>illuminatedg_lib_ig_simple_msg-1.0.0.24</Direct_Dependencies>
+      <Direct_Dependencies>illuminatedg_lib_ig_stream_base-1.1.0.32</Direct_Dependencies>
+      <Direct_Dependencies>illuminatedg_lib_ig_tcp_stream-0.1.0.29</Direct_Dependencies>
+      <Direct_Dependencies>illuminatedg_lib_ig_web&amp;crypto-0.1.0.9</Direct_Dependencies>
+      <Direct_Dependencies>illuminatedg_lib_ig_websocket_stream-1.0.0.4</Direct_Dependencies>
+    </Package_Dependencies>
     <Custom_Action_VIs>
       <Pre-Build_VI/>
       <Post-Build_VI/>
@@ -387,7 +400,7 @@
         <Path>HTTP Server\Server\Cleanup.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>10F2D2AB80CF8D029D56B12EDEAE4FA6</GUID>
+      <GUID>2B6F89AA69B753DFBDF9DBC217C5F695</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -422,7 +435,7 @@
         <Path>HTTP Server\StandardFileServe\Init.vi</Path>
         <VI_Title>Standard File Serve</VI_Title>
       </Items_Data>
-      <GUID>AC505C4A3A2F0EF29C2EE78B5ACAA2FE</GUID>
+      <GUID>274134CEA9DECA46070E05805AACD2E6</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -443,7 +456,7 @@
         <Synchronyze_with_Directory>false</Synchronyze_with_Directory>
         <Synchronize_Directory_Path/>
       </Synchronization_Info>
-      <GUID>BB576C6185D7B7ED4343EFA123ADD445</GUID>
+      <GUID>E62011F3FD0D82782F322141696E279D</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -506,7 +519,7 @@
         <Path>HTTP Server\Redirect Response\Create Redirect.vi</Path>
         <VI_Title>Redirect Response</VI_Title>
       </Items_Data>
-      <GUID>B58F8412DD774F154F945BF0AA2B60F9</GUID>
+      <GUID>3EC78F54536935AE50A2C35DE2580C22</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -667,7 +680,7 @@
         <Path>HTTP Server\Server\Enable Sessions.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>92BAEB65D24489A9D01909D88956E184</GUID>
+      <GUID>89ABD72FAB8FECA0D4AC9B112CC94D52</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -730,7 +743,7 @@
         <Path>HTTP Server\RequestTraceLog\Add Trace.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>571F7826A973A51F7593BF4C624BD68F</GUID>
+      <GUID>E32642B61CD56AA9E774F39D2AEF8930</GUID>
     </Functions_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>
