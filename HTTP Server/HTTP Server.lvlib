@@ -68,15 +68,14 @@
 			<Item Name="Session Cleanup Handler.lvclass" Type="LVClass" URL="../Session Cleanup Handler/Session Cleanup Handler.lvclass"/>
 			<Item Name="Session Response Handler.lvclass" Type="LVClass" URL="../Session Response Handler/Session Response Handler.lvclass"/>
 		</Item>
-		<Item Name="Services" Type="Folder">
-			<Item Name="Argument Name.vim" Type="VI" URL="../Argument Name.vim"/>
-		</Item>
+		<Item Name="Services" Type="Folder"/>
 		<Item Name="Sessions" Type="Folder"/>
 		<Item Name="Utilities" Type="Folder"/>
 	</Item>
 	<Item Name="Authentication" Type="Folder">
 		<Item Name="BasicPasswordEncoder.lvclass" Type="LVClass" URL="../BasicPasswordEncoder/BasicPasswordEncoder.lvclass"/>
 		<Item Name="FormAuthentication.lvclass" Type="LVClass" URL="../FormAuthentication/FormAuthentication.lvclass"/>
+		<Item Name="InMemoryUserProvider.lvclass" Type="LVClass" URL="../InMemoryUserProvider/InMemoryUserProvider.lvclass"/>
 	</Item>
 	<Item Name="Callback Types" Type="Folder">
 		<Item Name="Request Callback VI Type.vi" Type="VI" URL="../Request Callback VI Type.vi"/>
@@ -142,7 +141,10 @@
 		<Item Name="File Response.lvclass" Type="LVClass" URL="../File Response/File Response.lvclass"/>
 		<Item Name="Redirect Response.lvclass" Type="LVClass" URL="../Redirect Response/Redirect Response.lvclass"/>
 	</Item>
-	<Item Name="Services" Type="Folder"/>
+	<Item Name="Services" Type="Folder">
+		<Property Name="NI.LibItem.Scope" Type="Int">1</Property>
+		<Item Name="Argument Name.vim" Type="VI" URL="../Argument Name.vim"/>
+	</Item>
 	<Item Name="WebSockets" Type="Folder">
 		<Item Name="WebSocket Handler.lvclass" Type="LVClass" URL="../WebSocket Handler/WebSocket Handler.lvclass"/>
 	</Item>

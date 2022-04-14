@@ -18,6 +18,8 @@
 		<Item Name="Test" Type="Folder">
 			<Item Name="Auth Service" Type="Folder">
 				<Item Name="Test Auth Service.vi" Type="VI" URL="../Test/Test Auth Service.vi"/>
+				<Item Name="TestAuthController.lvclass" Type="LVClass" URL="../Test/TestAuthController/TestAuthController.lvclass"/>
+				<Item Name="TestUser.lvclass" Type="LVClass" URL="../Test/TestUser/TestUser.lvclass"/>
 			</Item>
 			<Item Name="Basic Forms" Type="Folder">
 				<Item Name="Test Basic Forms.vi" Type="VI" URL="../Test/Test Basic Forms.vi"/>
@@ -118,7 +120,6 @@
 				<Item Name="Trim Whitespace.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace.vi"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
-			<Item Name="Service Name.vim" Type="VI" URL="../HTTP Server/Service Name.vim"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="FileWebServer Exe" Type="EXE">
