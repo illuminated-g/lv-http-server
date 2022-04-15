@@ -1,3 +1,4 @@
 -2926  : Not Authorized
+15     : Nonexistent user
 1379   : Failed Authentication
 16554  : Missing login form field

@@ -92,8 +92,13 @@
 	</Item>
 	<Item Name="Data Types" Type="Folder">
 		<Item Name="Authentication" Type="Folder">
+			<Item Name="Auth Handlers.ctl" Type="VI" URL="../Auth Handlers.ctl"/>
 			<Item Name="Authentication Inputs.ctl" Type="VI" URL="../Authentication Inputs.ctl"/>
 			<Item Name="Authentication Outputs.ctl" Type="VI" URL="../Authentication Outputs.ctl"/>
+		</Item>
+		<Item Name="Security" Type="Folder">
+			<Item Name="Optional Providers.ctl" Type="VI" URL="../Optional Providers.ctl"/>
+			<Item Name="Role Inheritance.ctl" Type="VI" URL="../Role Inheritance.ctl"/>
 		</Item>
 		<Item Name="Steps" Type="Folder">
 			<Item Name="Cleanup Inputs.ctl" Type="VI" URL="../Cleanup Inputs.ctl"/>
@@ -143,7 +148,7 @@
 	</Item>
 	<Item Name="Services" Type="Folder">
 		<Property Name="NI.LibItem.Scope" Type="Int">1</Property>
-		<Item Name="Argument Name.vim" Type="VI" URL="../Argument Name.vim"/>
+		<Item Name="Security.lvclass" Type="LVClass" URL="../Security/Security.lvclass"/>
 	</Item>
 	<Item Name="WebSockets" Type="Folder">
 		<Item Name="WebSocket Handler.lvclass" Type="LVClass" URL="../WebSocket Handler/WebSocket Handler.lvclass"/>
