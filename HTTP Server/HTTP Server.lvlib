@@ -81,7 +81,7 @@
 		<Item Name="Request Callback VI Type.vi" Type="VI" URL="../Request Callback VI Type.vi"/>
 	</Item>
 	<Item Name="Containers" Type="Folder">
-		<Item Name="Arguments.lvclass" Type="LVClass" URL="../Arguments/Arguments.lvclass"/>
+		<Item Name="Values.lvclass" Type="LVClass" URL="../Values/Values.lvclass"/>
 	</Item>
 	<Item Name="Controllers" Type="Folder">
 		<Item Name="StandardFileServe.lvclass" Type="LVClass" URL="../StandardFileServe/StandardFileServe.lvclass"/>

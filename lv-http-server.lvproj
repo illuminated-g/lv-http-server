@@ -11,16 +11,16 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
+		<Item Name="Auth Service" Type="Folder">
+			<Item Name="Test Auth Service.vi" Type="VI" URL="../Test/Test Auth Service.vi"/>
+			<Item Name="TestAuthController.lvclass" Type="LVClass" URL="../Test/TestAuthController/TestAuthController.lvclass"/>
+			<Item Name="TestUser.lvclass" Type="LVClass" URL="../Test/TestUser/TestUser.lvclass"/>
+		</Item>
 		<Item Name="Documentation" Type="Folder">
 			<Item Name="Errors.txt" Type="Document" URL="../Documentation/Errors.txt"/>
 			<Item Name="Priorities.txt" Type="Document" URL="../Documentation/Priorities.txt"/>
 		</Item>
 		<Item Name="Test" Type="Folder">
-			<Item Name="Auth Service" Type="Folder">
-				<Item Name="Test Auth Service.vi" Type="VI" URL="../Test/Test Auth Service.vi"/>
-				<Item Name="TestAuthController.lvclass" Type="LVClass" URL="../Test/TestAuthController/TestAuthController.lvclass"/>
-				<Item Name="TestUser.lvclass" Type="LVClass" URL="../Test/TestUser/TestUser.lvclass"/>
-			</Item>
 			<Item Name="Basic Forms" Type="Folder">
 				<Item Name="Test Basic Forms.vi" Type="VI" URL="../Test/Test Basic Forms.vi"/>
 			</Item>
