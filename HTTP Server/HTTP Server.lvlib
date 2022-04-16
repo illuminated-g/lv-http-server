@@ -116,6 +116,7 @@
 			<Item Name="Routing Outputs.ctl" Type="VI" URL="../Routing Outputs.ctl"/>
 		</Item>
 		<Item Name="Processing Step.ctl" Type="VI" URL="../Processing Step.ctl"/>
+		<Item Name="Session Debug Info.ctl" Type="VI" URL="../Session Debug Info.ctl"/>
 		<Item Name="Trace Item.ctl" Type="VI" URL="../Trace Item.ctl"/>
 		<Item Name="Trace Log.ctl" Type="VI" URL="../Trace Log.ctl"/>
 	</Item>
