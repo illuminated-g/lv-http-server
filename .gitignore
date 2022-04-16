@@ -17,3 +17,4 @@
 .cache/
 /Antidoc-Output
 /Test/Sessions/lv_session/*
+*.bkp

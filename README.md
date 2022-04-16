@@ -93,6 +93,12 @@ This server provides flexibility and extensibility via a handful of specific req
 
 <br/>
 
+The processing flow is kicked off by launching an async VI when new connections are created. The above flow chart is implemented by the following block diagram:
+
+![Request Processing Block Diagram](https://raw.githubusercontent.com/illuminated-g/lv-http-server/main/Documentation/images/processasync.png "Request Processing Block Diagram")
+
+<br/>
+
 # Handlers and Controllers
 
 Aside from Controllers, which can certainly grow quite large, the expectation is that the other handlers should be small and run quickly. In the flowchart above, each of the blue shapes represents an interface point and except for the Controller step, is a loop to run through all registered handlers for that step.
