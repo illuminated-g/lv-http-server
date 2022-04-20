@@ -11,20 +11,17 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="Auth Service" Type="Folder">
-			<Item Name="Test Auth Service.vi" Type="VI" URL="../Test/Test Auth Service.vi"/>
-			<Item Name="TestAuthController.lvclass" Type="LVClass" URL="../Test/TestAuthController/TestAuthController.lvclass"/>
-			<Item Name="TestUser.lvclass" Type="LVClass" URL="../Test/TestUser/TestUser.lvclass"/>
-		</Item>
 		<Item Name="Documentation" Type="Folder">
 			<Item Name="Errors.txt" Type="Document" URL="../Documentation/Errors.txt"/>
 			<Item Name="Priorities.txt" Type="Document" URL="../Documentation/Priorities.txt"/>
 		</Item>
 		<Item Name="Test" Type="Folder">
-			<Item Name="Basic Forms" Type="Folder">
-				<Item Name="Test Basic Forms.vi" Type="VI" URL="../Test/Test Basic Forms.vi"/>
+			<Item Name="Auth Service" Type="Folder">
+				<Item Name="Test Auth Service.vi" Type="VI" URL="../Test/Test Auth Service.vi"/>
+				<Item Name="TestAuthController.lvclass" Type="LVClass" URL="../Test/TestAuthController/TestAuthController.lvclass"/>
+				<Item Name="TestUser.lvclass" Type="LVClass" URL="../Test/TestUser/TestUser.lvclass"/>
 			</Item>
-			<Item Name="CSRF Protection" Type="Folder">
+			<Item Name="CSRF" Type="Folder">
 				<Item Name="Test CSRF.vi" Type="VI" URL="../Test/CSRF Protection/Test CSRF.vi"/>
 				<Item Name="TestCSRFController.lvclass" Type="LVClass" URL="../Test/TestCSRFController/TestCSRFController.lvclass"/>
 			</Item>
@@ -39,27 +36,30 @@
 				</Item>
 				<Item Name="Serve Web Root.vi" Type="VI" URL="../Test/Serve Web Root.vi"/>
 				<Item Name="Test Invalid Path Segment.vi" Type="VI" URL="../Test/Test Invalid Path Segment.vi"/>
+				<Item Name="test.jpg" Type="Document" URL="../Test/FileServe/test.jpg"/>
+			</Item>
+			<Item Name="Forms" Type="Folder">
+				<Item Name="Test Basic Forms.vi" Type="VI" URL="../Test/Test Basic Forms.vi"/>
 			</Item>
 			<Item Name="Query Auth" Type="Folder">
 				<Item Name="QueryAuthController.lvclass" Type="LVClass" URL="../Test/QueryAuthController/QueryAuthController.lvclass"/>
 				<Item Name="Test Query Auth.vi" Type="VI" URL="../Test/Test Query Auth.vi"/>
 				<Item Name="TestQueryAuth.lvclass" Type="LVClass" URL="../Test/TestQueryAuth/TestQueryAuth.lvclass"/>
 			</Item>
-			<Item Name="Session" Type="Folder">
-				<Item Name="Test Sessions Controller.lvclass" Type="LVClass" URL="../Test Sessions Controller/Test Sessions Controller.lvclass"/>
+			<Item Name="Sessions" Type="Folder">
+				<Item Name="Test Sessions Controller.lvclass" Type="LVClass" URL="../Test/Test Sessions Controller/Test Sessions Controller.lvclass"/>
 				<Item Name="Test Sessions.vi" Type="VI" URL="../Test/Test Sessions.vi"/>
 			</Item>
-			<Item Name="Single Page" Type="Folder">
+			<Item Name="Test Index" Type="Folder">
 				<Item Name="Test Index.lvclass" Type="LVClass" URL="../Test/Test Index/Test Index.lvclass"/>
 				<Item Name="Test Simple Server.vi" Type="VI" URL="../Test/Test Simple Server.vi"/>
 			</Item>
 			<Item Name="WebSocket" Type="Folder">
-				<Item Name="_Callbacks" Type="Folder">
-					<Item Name="Test WS Connection Callback.vi" Type="VI" URL="../HTTP Server/Server/Test WS Connection Callback.vi"/>
-					<Item Name="Test WS Message Callback.vi" Type="VI" URL="../HTTP Server/Server/Test WS Message Callback.vi"/>
-				</Item>
 				<Item Name="Test WebSocket Page Controller.lvclass" Type="LVClass" URL="../Test/Test WebSocket Page Controller/Test WebSocket Page Controller.lvclass"/>
 				<Item Name="Test WebSocket Upgrade.vi" Type="VI" URL="../Test/WebSocket/Test WebSocket Upgrade.vi"/>
+				<Item Name="Test WS Connection Callback.vi" Type="VI" URL="../Test/WebSocket/Test WS Connection Callback.vi"/>
+				<Item Name="Test WS Message Callback.vi" Type="VI" URL="../Test/WebSocket/Test WS Message Callback.vi"/>
+				<Item Name="ws-index.html" Type="Document" URL="../Test/WebSocket/ws-index.html"/>
 			</Item>
 		</Item>
 		<Item Name="HTTP Server.lvlib" Type="Library" URL="../HTTP Server/HTTP Server.lvlib"/>
@@ -154,19 +154,19 @@
 				<Property Name="Source[0].itemID" Type="Str">{9DB163AC-0D71-45C0-808C-D2DB2BE84C5A}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Test/Files/Serve Web Root.vi</Property>
+				<Property Name="Source[1].itemID" Type="Ref"></Property>
 				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[1].type" Type="Str">VI</Property>
 				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[2].itemID" Type="Ref">/My Computer/Test/Files/www/ig.png</Property>
+				<Property Name="Source[2].itemID" Type="Ref"></Property>
 				<Property Name="Source[2].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[3].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[3].itemID" Type="Ref">/My Computer/Test/Files/www/index.html</Property>
+				<Property Name="Source[3].itemID" Type="Ref"></Property>
 				<Property Name="Source[3].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[4].Container.applyDestination" Type="Bool">true</Property>
 				<Property Name="Source[4].Container.depDestIndex" Type="Int">0</Property>
 				<Property Name="Source[4].destinationIndex" Type="Int">2</Property>
-				<Property Name="Source[4].itemID" Type="Ref">/My Computer/Test/Files/www</Property>
+				<Property Name="Source[4].itemID" Type="Ref"></Property>
 				<Property Name="Source[4].type" Type="Str">Container</Property>
 				<Property Name="SourceCount" Type="Int">5</Property>
 				<Property Name="TgtF_companyName" Type="Str">National Instruments</Property>

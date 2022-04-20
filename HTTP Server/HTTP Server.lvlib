@@ -154,6 +154,7 @@
 	<Item Name="WebSockets" Type="Folder">
 		<Item Name="WebSocket Handler.lvclass" Type="LVClass" URL="../WebSocket Handler/WebSocket Handler.lvclass"/>
 	</Item>
+	<Item Name="Processing.lvclass" Type="LVClass" URL="../Processing/Processing.lvclass"/>
 	<Item Name="Server.lvclass" Type="LVClass" URL="../Server/Server.lvclass"/>
 	<Item Name="Session.lvclass" Type="LVClass" URL="../Session/Session.lvclass"/>
 </Library>
