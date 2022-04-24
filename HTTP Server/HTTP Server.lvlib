@@ -143,10 +143,6 @@
 	<Item Name="Logging" Type="Folder">
 		<Item Name="RequestTraceLog.lvclass" Type="LVClass" URL="../RequestTraceLog/RequestTraceLog.lvclass"/>
 	</Item>
-	<Item Name="Responses" Type="Folder">
-		<Item Name="File Response.lvclass" Type="LVClass" URL="../File Response/File Response.lvclass"/>
-		<Item Name="Redirect Response.lvclass" Type="LVClass" URL="../Redirect Response/Redirect Response.lvclass"/>
-	</Item>
 	<Item Name="Services" Type="Folder">
 		<Property Name="NI.LibItem.Scope" Type="Int">1</Property>
 		<Item Name="Security.lvclass" Type="LVClass" URL="../Security/Security.lvclass"/>
