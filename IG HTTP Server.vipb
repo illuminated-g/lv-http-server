@@ -1,4 +1,4 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2022-01-15 11:25:16" Modified_Date="2022-04-24 23:01:10" Creator="Localization Tester" Comments="" ID="f34e80888d4b06272b6db67a32420786">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2022-01-15 11:25:16" Modified_Date="2022-04-25 01:15:39" Creator="Localization Tester" Comments="" ID="9f6eb352915df89c021f9e553306f85a">
   <Library_General_Settings>
     <Package_File_Name>IlluminatedG_lib_IG_HTTP_Server</Package_File_Name>
     <Library_Version>1.0.0.11</Library_Version>
@@ -17,13 +17,13 @@
   </Library_General_Settings>
   <Advanced_Settings>
     <Package_Dependencies>
-      <External_Dependencies>illuminatedg_lib_ig_http_utils &gt;= 1.0.0.28</External_Dependencies>
+      <External_Dependencies>illuminatedg_lib_ig_http_utils &gt;= 1.0.0.29</External_Dependencies>
       <External_Dependencies>illuminatedg_lib_ig_simple_msg &gt;= 1.0.0.24</External_Dependencies>
       <External_Dependencies>illuminatedg_lib_ig_stream_base &gt;= 1.1.0.32</External_Dependencies>
       <External_Dependencies>illuminatedg_lib_ig_tcp_stream &gt;= 0.1.0.29</External_Dependencies>
       <External_Dependencies>illuminatedg_lib_ig_web&amp;crypto &gt;= 0.1.0.9</External_Dependencies>
       <External_Dependencies>illuminatedg_lib_ig_websocket_stream &gt;= 1.0.0.4</External_Dependencies>
-      <Direct_Dependencies>illuminatedg_lib_ig_http_utils-1.0.0.28</Direct_Dependencies>
+      <Direct_Dependencies>illuminatedg_lib_ig_http_utils-1.0.0.29</Direct_Dependencies>
       <Direct_Dependencies>illuminatedg_lib_ig_simple_msg-1.0.0.24</Direct_Dependencies>
       <Direct_Dependencies>illuminatedg_lib_ig_stream_base-1.1.0.32</Direct_Dependencies>
       <Direct_Dependencies>illuminatedg_lib_ig_tcp_stream-0.1.0.29</Direct_Dependencies>
@@ -428,7 +428,7 @@
         <Path>Forms</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>C54C3F2D402290F22A842FB609177228</GUID>
+      <GUID>82514C8A8189C1E4AE86BA46EF53F435</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -463,7 +463,7 @@
         <Path>HTTP Server\StandardFileServe\Init.vi</Path>
         <VI_Title>Standard File Serve</VI_Title>
       </Items_Data>
-      <GUID>FB758C526948A7E909ACE17F39210A15</GUID>
+      <GUID>B3EA54FCBF141EEB054E6F8B480A8CC3</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -484,7 +484,7 @@
         <Synchronyze_with_Directory>false</Synchronyze_with_Directory>
         <Synchronize_Directory_Path/>
       </Synchronization_Info>
-      <GUID>8A2A13D29F14EAF3E368626758D009A8</GUID>
+      <GUID>AEC508567FFD25C15C6C6429B57EB342</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -519,7 +519,7 @@
         <Path>&lt;vi.lib&gt;\IlluminatedG\IG HTTP Utils\HTTP Utils\Response\Create Basic Response.vi</Path>
         <VI_Title>Basic Response</VI_Title>
       </Items_Data>
-      <GUID>48677ACA27797135937726E500B02F42</GUID>
+      <GUID>EDC35222CFA31E3946797F30D1079059</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -680,7 +680,7 @@
         <Path>HTTP Server\Server\Enable Sessions.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>28AA58B7A27E09E583AB01C0EC133C76</GUID>
+      <GUID>DF6B253C0D6E20B3E0474FFE6C736C94</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -743,7 +743,7 @@
         <Path>HTTP Server\RequestTraceLog\Add Trace.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>7A52C5E63114FDD1E96CDA08E6EB8925</GUID>
+      <GUID>C51E746AEB2FC68BAE40ABD100A5C84E</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -904,7 +904,7 @@
         <Path>HTTP Server\InMemoryUserProvider\Add Users.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>D05DF7E6EC8E4F708EECF0272D7B8988</GUID>
+      <GUID>C8C7FE0B11945EE16DF412885464C14D</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -953,7 +953,7 @@
         <Path>HTTP Server\CSRF\Validate CSRF Token.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>4C0B192F3F7ABADE7121206B1813E4D3</GUID>
+      <GUID>53FF08BDAE99A92D001142A94C5E9B11</GUID>
     </Functions_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>
