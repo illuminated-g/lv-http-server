@@ -54,19 +54,24 @@
 			<Item Name="Request VI.ctl" Type="VI" URL="../Request VI.ctl"/>
 		</Item>
 		<Item Name="Handlers" Type="Folder">
+			<Item Name="Auth" Type="Folder">
+				<Item Name="Authentication Handler.lvclass" Type="LVClass" URL="../Authentication Handler/Authentication Handler.lvclass"/>
+			</Item>
+			<Item Name="Caching" Type="Folder"/>
 			<Item Name="Exceptions" Type="Folder">
 				<Item Name="BadRequestException.lvclass" Type="LVClass" URL="../BadRequestException/BadRequestException.lvclass"/>
 				<Item Name="FileNotFoundException.lvclass" Type="LVClass" URL="../FileNotFoundException/FileNotFoundException.lvclass"/>
 				<Item Name="NoControllerException.lvclass" Type="LVClass" URL="../NoControllerException/NoControllerException.lvclass"/>
 			</Item>
-			<Item Name="Authentication Handler.lvclass" Type="LVClass" URL="../Authentication Handler/Authentication Handler.lvclass"/>
+			<Item Name="Session" Type="Folder">
+				<Item Name="Request Session Handler.lvclass" Type="LVClass" URL="../Request Session Handler/Request Session Handler.lvclass"/>
+				<Item Name="Session Cleanup Handler.lvclass" Type="LVClass" URL="../Session Cleanup Handler/Session Cleanup Handler.lvclass"/>
+				<Item Name="Session Response Handler.lvclass" Type="LVClass" URL="../Session Response Handler/Session Response Handler.lvclass"/>
+			</Item>
 			<Item Name="ControllerIndexedPathParams Handler.lvclass" Type="LVClass" URL="../ControllerIndexedPathParams Handler/ControllerIndexedPathParams Handler.lvclass"/>
 			<Item Name="FileExistChecker.lvclass" Type="LVClass" URL="../FileExistChecker/FileExistChecker.lvclass"/>
 			<Item Name="PathRegex Router.lvclass" Type="LVClass" URL="../PathRegex Router/PathRegex Router.lvclass"/>
 			<Item Name="PathValidation.lvclass" Type="LVClass" URL="../PathValidation/PathValidation.lvclass"/>
-			<Item Name="Request Session Handler.lvclass" Type="LVClass" URL="../Request Session Handler/Request Session Handler.lvclass"/>
-			<Item Name="Session Cleanup Handler.lvclass" Type="LVClass" URL="../Session Cleanup Handler/Session Cleanup Handler.lvclass"/>
-			<Item Name="Session Response Handler.lvclass" Type="LVClass" URL="../Session Response Handler/Session Response Handler.lvclass"/>
 		</Item>
 		<Item Name="Services" Type="Folder"/>
 		<Item Name="Sessions" Type="Folder"/>
@@ -76,6 +81,12 @@
 		<Item Name="BasicPasswordEncoder.lvclass" Type="LVClass" URL="../BasicPasswordEncoder/BasicPasswordEncoder.lvclass"/>
 		<Item Name="FormAuthentication.lvclass" Type="LVClass" URL="../FormAuthentication/FormAuthentication.lvclass"/>
 		<Item Name="InMemoryUserProvider.lvclass" Type="LVClass" URL="../InMemoryUserProvider/InMemoryUserProvider.lvclass"/>
+	</Item>
+	<Item Name="Caching" Type="Folder">
+		<Item Name="Caching Complete.lvclass" Type="LVClass" URL="../Caching Complete/Caching Complete.lvclass"/>
+		<Item Name="Caching Request.lvclass" Type="LVClass" URL="../Caching Request/Caching Request.lvclass"/>
+		<Item Name="Caching Response.lvclass" Type="LVClass" URL="../Caching Response/Caching Response.lvclass"/>
+		<Item Name="Caching.lvclass" Type="LVClass" URL="../Caching/Caching.lvclass"/>
 	</Item>
 	<Item Name="Callback Types" Type="Folder">
 		<Item Name="Request Callback VI Type.vi" Type="VI" URL="../Request Callback VI Type.vi"/>
@@ -95,6 +106,10 @@
 			<Item Name="Auth Handlers.ctl" Type="VI" URL="../Auth Handlers.ctl"/>
 			<Item Name="Authentication Inputs.ctl" Type="VI" URL="../Authentication Inputs.ctl"/>
 			<Item Name="Authentication Outputs.ctl" Type="VI" URL="../Authentication Outputs.ctl"/>
+		</Item>
+		<Item Name="Caching" Type="Folder">
+			<Item Name="Request Cache Type.ctl" Type="VI" URL="../Request Cache Type.ctl"/>
+			<Item Name="Server Caching.ctl" Type="VI" URL="../Server Caching.ctl"/>
 		</Item>
 		<Item Name="Security" Type="Folder">
 			<Item Name="Optional Providers.ctl" Type="VI" URL="../Optional Providers.ctl"/>

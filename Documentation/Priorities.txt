@@ -1,4 +1,5 @@
 10 - Request Validation (Typically generate 400 Response)
+50 - Caching Request Handler
 100 - Request Session Init
 101 - Authentication
 
@@ -7,6 +8,8 @@
 10000 - Default
 
 30000 - Fallback Handlers (Built-in file serving, exceptions, etc.)
+30000 - Caching Complete Handler
 
 60000 - Response Session Headers
 60000 - Processing Session Complete
+61000 - Caching Response Handler
