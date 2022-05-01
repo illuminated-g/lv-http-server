@@ -57,7 +57,6 @@
 			<Item Name="Auth" Type="Folder">
 				<Item Name="Authentication Handler.lvclass" Type="LVClass" URL="../Authentication Handler/Authentication Handler.lvclass"/>
 			</Item>
-			<Item Name="Caching" Type="Folder"/>
 			<Item Name="Exceptions" Type="Folder">
 				<Item Name="BadRequestException.lvclass" Type="LVClass" URL="../BadRequestException/BadRequestException.lvclass"/>
 				<Item Name="FileNotFoundException.lvclass" Type="LVClass" URL="../FileNotFoundException/FileNotFoundException.lvclass"/>
@@ -70,6 +69,7 @@
 			</Item>
 			<Item Name="ControllerIndexedPathParams Handler.lvclass" Type="LVClass" URL="../ControllerIndexedPathParams Handler/ControllerIndexedPathParams Handler.lvclass"/>
 			<Item Name="FileExistChecker.lvclass" Type="LVClass" URL="../FileExistChecker/FileExistChecker.lvclass"/>
+			<Item Name="HTTPS Redirect Handler.lvclass" Type="LVClass" URL="../HTTPS Redirect Handler/HTTPS Redirect Handler.lvclass"/>
 			<Item Name="PathRegex Router.lvclass" Type="LVClass" URL="../PathRegex Router/PathRegex Router.lvclass"/>
 			<Item Name="PathValidation.lvclass" Type="LVClass" URL="../PathValidation/PathValidation.lvclass"/>
 		</Item>
@@ -81,6 +81,7 @@
 		<Item Name="BasicPasswordEncoder.lvclass" Type="LVClass" URL="../BasicPasswordEncoder/BasicPasswordEncoder.lvclass"/>
 		<Item Name="FormAuthentication.lvclass" Type="LVClass" URL="../FormAuthentication/FormAuthentication.lvclass"/>
 		<Item Name="InMemoryUserProvider.lvclass" Type="LVClass" URL="../InMemoryUserProvider/InMemoryUserProvider.lvclass"/>
+		<Item Name="Security.lvclass" Type="LVClass" URL="../Security/Security.lvclass"/>
 	</Item>
 	<Item Name="Caching" Type="Folder">
 		<Item Name="Caching Complete.lvclass" Type="LVClass" URL="../Caching Complete/Caching Complete.lvclass"/>
@@ -130,6 +131,7 @@
 			<Item Name="Routing Inputs.ctl" Type="VI" URL="../Routing Inputs.ctl"/>
 			<Item Name="Routing Outputs.ctl" Type="VI" URL="../Routing Outputs.ctl"/>
 		</Item>
+		<Item Name="HTTPS Options.ctl" Type="VI" URL="../HTTPS Options.ctl"/>
 		<Item Name="Processing Step.ctl" Type="VI" URL="../Processing Step.ctl"/>
 		<Item Name="Session Debug Info.ctl" Type="VI" URL="../Session Debug Info.ctl"/>
 		<Item Name="Trace Item.ctl" Type="VI" URL="../Trace Item.ctl"/>
@@ -157,10 +159,6 @@
 	</Item>
 	<Item Name="Logging" Type="Folder">
 		<Item Name="RequestTraceLog.lvclass" Type="LVClass" URL="../RequestTraceLog/RequestTraceLog.lvclass"/>
-	</Item>
-	<Item Name="Services" Type="Folder">
-		<Property Name="NI.LibItem.Scope" Type="Int">1</Property>
-		<Item Name="Security.lvclass" Type="LVClass" URL="../Security/Security.lvclass"/>
 	</Item>
 	<Item Name="WebSockets" Type="Folder">
 		<Item Name="WebSocket Handler.lvclass" Type="LVClass" URL="../WebSocket Handler/WebSocket Handler.lvclass"/>

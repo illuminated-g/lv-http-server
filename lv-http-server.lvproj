@@ -41,6 +41,11 @@
 			<Item Name="Forms" Type="Folder">
 				<Item Name="Test Basic Forms.vi" Type="VI" URL="../Test/Test Basic Forms.vi"/>
 			</Item>
+			<Item Name="HTTPS" Type="Folder">
+				<Item Name="Test HTTPS Controller.lvclass" Type="LVClass" URL="../Test/Test HTTPS Controller/Test HTTPS Controller.lvclass"/>
+				<Item Name="Test HTTPS.vi" Type="VI" URL="../Test/Test HTTPS.vi"/>
+				<Item Name="Test TLS.vi" Type="VI" URL="../Test/HTTPS/Test TLS.vi"/>
+			</Item>
 			<Item Name="Query Auth" Type="Folder">
 				<Item Name="QueryAuthController.lvclass" Type="LVClass" URL="../Test/QueryAuthController/QueryAuthController.lvclass"/>
 				<Item Name="Test Query Auth.vi" Type="VI" URL="../Test/Test Query Auth.vi"/>
