@@ -14,6 +14,12 @@
             var connectButton = document.getElementById('connect');
             var valueField = document.getElementById('value');
             var sock = null;
+			
+			function sendMessage(id, data) {
+				var msg = {id: id, data: data};
+				var msgJSON = JSON.stringify(msg);
+				sock.send(msgJSON);
+			}
 
             function onConnectClick(evt) {
                 connectButton.disabled = true;
@@ -27,12 +33,15 @@
 
             function onConnect(evt) {
                 console.log('Connected!');
+				sendMessage('sayhi', nameInput.value);
             }
 
             function onMessage(evt) {
-                switch (evt.data.id) {
+				var msg = JSON.parse(evt.data);
+				
+                switch (msg.id) {
                     case 'value':
-                        valueField.value = evt.data.data;
+                        valueField.value = msg.data;
                         break;
                     
                     default:

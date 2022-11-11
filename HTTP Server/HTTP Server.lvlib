@@ -9,7 +9,9 @@
 	<Property Name="Database Path" Type="Str">C:\Program Files (x86)\National Instruments\LabVIEW 2020\data</Property>
 	<Property Name="Enable Alarms Logging" Type="Bool">true</Property>
 	<Property Name="Enable Data Logging" Type="Bool">true</Property>
+	<Property Name="NI.Lib.HelpPath" Type="Str"></Property>
 	<Property Name="NI.Lib.Icon" Type="Bin">)!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!)F!!!*Q(C=\&gt;4.43."%-8R"^I$6W?!,#1#?#EY";&gt;1+=RV^O9T&amp;V1J/!0E&amp;#I&amp;J_!$#:B`NRO,F2;MF29*#8J=:PT[[]@-;+4?&lt;K2@/FZK4R_W=`_R@&gt;LQV`J&lt;@`O]/@ODP]^Z\&lt;]]`V`\X`0LJ`WU\^XG3[_!TS&gt;=K&lt;W)K++3#MJK7R_,P-C,P-C,P-C40-G40-G40-G$0-C$0-C$0-B.&lt;H+4G^TE*O](O=B&amp;,H*)R?&lt;&amp;2M7CR1,&amp;9#AKPAJ0Y3E]B9?@+DS&amp;J`!5HM,$%"7?QF.Y#E`B9:I+4_%J0)7H],"5FV1`S0%5(J:8YEE]C3@R*"[W6/**!-FGS=,*)D#5&gt;#9HC3@R*"Z/F8A34_**0)G(&lt;C7?R*.Y%E`C95K`+NEV\3$(QT)+0)%H]!3?Q-03#DS"*`!%HM$$&gt;AI]A3&gt;!""M'CU.1-#E9%0Q)0)'(0QI]A3@Q"*\!1V?`1^'P4./UARS0]2C0]2C0]&lt;#%D-&gt;YD-&gt;YD)&gt;F:4T'9TT'9TRM*?-R(O-R%,-JW]MM:C;;139Q(D\^;8'`3^EF\I=U(F[.BV,D9&gt;.YC$1?$IW&lt;LH%T.7[3RM88O+A;&amp;UPD)GD]=RJI$9T'*BK4WU!&gt;_.Z4/WJ,&lt;;C*7F-L;EENWN4`00"Q/'C`XWOXWWG\X7KTW7C;*KX8;[V7+SW83SU7C`.LY*&lt;D`%)YP:&gt;GTO@([7J_O0M^0^_XP[=[D@HM^A8?D&lt;L7WXWY2C],:I&amp;#!!!!!!</Property>
+	<Property Name="NI.Lib.LocalName" Type="Str">HTTP Server</Property>
 	<Property Name="NI.Lib.SourceVersion" Type="Int">536903680</Property>
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
@@ -52,6 +54,7 @@
 			<Item Name="Priority.ctl" Type="VI" URL="../Priority.ctl"/>
 			<Item Name="Request Callback.ctl" Type="VI" URL="../Request Callback.ctl"/>
 			<Item Name="Request VI.ctl" Type="VI" URL="../Request VI.ctl"/>
+			<Item Name="WebSocket Data.ctl" Type="VI" URL="../WebSocket Data.ctl"/>
 		</Item>
 		<Item Name="Handlers" Type="Folder">
 			<Item Name="Auth" Type="Folder">
@@ -75,6 +78,10 @@
 		</Item>
 		<Item Name="Services" Type="Folder"/>
 		<Item Name="Sessions" Type="Folder"/>
+		<Item Name="TCP" Type="Folder">
+			<Item Name="HTTP TCP Client.lvclass" Type="LVClass" URL="../HTTP TCP Client/HTTP TCP Client.lvclass"/>
+			<Item Name="HTTP TCP Server.lvclass" Type="LVClass" URL="../HTTP TCP Server/HTTP TCP Server.lvclass"/>
+		</Item>
 		<Item Name="Utilities" Type="Folder"/>
 	</Item>
 	<Item Name="Authentication" Type="Folder">

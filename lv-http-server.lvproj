@@ -15,6 +15,17 @@
 			<Item Name="Errors.txt" Type="Document" URL="../Documentation/Errors.txt"/>
 			<Item Name="Priorities.txt" Type="Document" URL="../Documentation/Priorities.txt"/>
 		</Item>
+		<Item Name="Palettes" Type="Folder">
+			<Item Name="Basic Encoder Constant.vi" Type="VI" URL="../Palettes/Basic Encoder Constant.vi"/>
+			<Item Name="Create Basic Response.vi" Type="VI" URL="../Palettes/Create Basic Response.vi"/>
+			<Item Name="Create File Response.vi" Type="VI" URL="../Palettes/Create File Response.vi"/>
+			<Item Name="Create Redirect Response.vi" Type="VI" URL="../Palettes/Create Redirect Response.vi"/>
+			<Item Name="HTTP Server Class.vi" Type="VI" URL="../Palettes/HTTP Server Class.vi"/>
+			<Item Name="Lookup Form Field.vi" Type="VI" URL="../Palettes/Lookup Form Field.vi"/>
+			<Item Name="Password Encoder Constant.vi" Type="VI" URL="../Palettes/Password Encoder Constant.vi"/>
+			<Item Name="Security Service Constant.vi" Type="VI" URL="../Palettes/Security Service Constant.vi"/>
+			<Item Name="User Constant.vi" Type="VI" URL="../Palettes/User Constant.vi"/>
+		</Item>
 		<Item Name="Test" Type="Folder">
 			<Item Name="Auth Service" Type="Folder">
 				<Item Name="Test Auth Service.vi" Type="VI" URL="../Test/Test Auth Service.vi"/>
@@ -60,10 +71,10 @@
 				<Item Name="Test Simple Server.vi" Type="VI" URL="../Test/Test Simple Server.vi"/>
 			</Item>
 			<Item Name="WebSocket" Type="Folder">
+				<Item Name="Say Hi Msg Callback.vi" Type="VI" URL="/Z/IlluminatedG/Say Hi Msg Callback.vi"/>
 				<Item Name="Test WebSocket Page Controller.lvclass" Type="LVClass" URL="../Test/Test WebSocket Page Controller/Test WebSocket Page Controller.lvclass"/>
 				<Item Name="Test WebSocket Upgrade.vi" Type="VI" URL="../Test/WebSocket/Test WebSocket Upgrade.vi"/>
-				<Item Name="Test WS Connection Callback.vi" Type="VI" URL="../Test/WebSocket/Test WS Connection Callback.vi"/>
-				<Item Name="Test WS Message Callback.vi" Type="VI" URL="../Test/WebSocket/Test WS Message Callback.vi"/>
+				<Item Name="WebSocket Test UI Refs.lvclass" Type="LVClass" URL="../Test/WebSocket Test UI Refs/WebSocket Test UI Refs.lvclass"/>
 				<Item Name="ws-index.html" Type="Document" URL="../Test/WebSocket/ws-index.html"/>
 			</Item>
 		</Item>
@@ -72,6 +83,7 @@
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="1D String Array to Delimited String.vi" Type="VI" URL="/&lt;vilib&gt;/AdvancedString/1D String Array to Delimited String.vi"/>
 				<Item Name="Application Directory.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Application Directory.vi"/>
+				<Item Name="Assert Scalar Numeric Type.vim" Type="VI" URL="/&lt;vilib&gt;/Utility/TypeAssert/Assert Scalar Numeric Type.vim"/>
 				<Item Name="Base64.lvlib" Type="Library" URL="/&lt;vilib&gt;/IlluminatedG/lv-web-crypto/lv-base64/Base64.lvlib"/>
 				<Item Name="BuildHelpPath.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/BuildHelpPath.vi"/>
 				<Item Name="Check if File or Folder Exists.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Check if File or Folder Exists.vi"/>
