@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2022-01-15 11:25:16" Modified_Date="2022-11-10 22:03:06" Creator="Localization Tester" Comments="" ID="94592bfcc647dd3e489a2c6da9c1dc48">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2022-01-15 11:25:16" Modified_Date="2022-11-11 13:10:58" Creator="Localization Tester" Comments="" ID="5cf4dbd4bb138ecb42248b3825801e25">
   <Library_General_Settings>
     <Package_File_Name>IlluminatedG_lib_IG_HTTP_Server</Package_File_Name>
-    <Library_Version>1.0.0.28</Library_Version>
+    <Library_Version>0.5.0.30</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>.</Library_Source_Folder>
     <Library_Output_Folder>..\vip</Library_Output_Folder>
@@ -43,9 +43,22 @@
       <One_Line_Description_Summary>HTTP Web Server implemented with 100% LabVIEW. Includes HTTPS, Form handling, Sessions, WebSocket Upgrades, and more.</One_Line_Description_Summary>
       <Description>HTTP Web Server for LabVIEW applications. Provides easy to use common features such as file serving and request handling akin to LabVIEW Web Services. The underlying processing flow is comprised of many steps that can be augmented with additional functionality by registering interface implementations specific to each step.
 
-&lt;b&gt;This project is under active development and as such should not be considered a secure web server implementation without your own verification.&lt;/b&gt;
+&lt;b&gt;This project is under active development and as such should not be considered a secure web server implementation without your own verification with the features you use.&lt;/b&gt; This server does aim to default to the more secure option when possible and enables important features such as HTTPS and secure WebSockets but care should always be taken any time a server is exposed to a network.
 
-The github repository at https://github.com/illuminated-g/lv-http-server provides most of the high level documentation and there are plenty of examples to demonstrate the available features.</Description>
+The github repository at https://github.com/illuminated-g/lv-http-server provides most of the high level documentation and there are plenty of examples to demonstrate the available features.
+
+Features of this web server include:
+ - HTTPS including automatic redirecting from port 80 to the HTTPS port
+ - File Serving - includes protections against attacks trying to ascend out of the specified root folder
+ - Sessions (&amp; Cookies) - Ability to store user data server side across requests
+ - WebSocket connection upgrades - Enable WebSocket connection by request path at the same port the web content is accessed at.
+ - CSRF tokens to make it easier to protect against POST and other submission attacks
+ - Request processing trace logging - Useful for debug and performance testing
+ - Authentication framework - Automated redirects to login page, logout handling, ability to plug in implementations for users and user providers to identify requests, and utilities for ensuring passwords are handled in a more secure manner.
+ - Debug mode to respond to error requests with the full error message
+
+Needs work:
+ - Caching - implemented but caching handlers don't react to cache headers properly.</Description>
       <Copyright/>
       <Packager>Derrick Bommarito</Packager>
       <URL>https://github.com/illuminated-g/lv-http-server</URL>
@@ -448,7 +461,7 @@ The github repository at https://github.com/illuminated-g/lv-http-server provide
         <Path>HTTP Server\Server\Create WebSocket Resource.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>2EC4ACFF34E6162E83AA37D722128037</GUID>
+      <GUID>521452947454532F3EE8A57C12753282</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -483,7 +496,7 @@ The github repository at https://github.com/illuminated-g/lv-http-server provide
         <Path>HTTP Server\StandardFileServe\Init.vi</Path>
         <VI_Title>Standard File Serve</VI_Title>
       </Items_Data>
-      <GUID>7B4E6516EB91B79B33E0D3D30FCE1B2E</GUID>
+      <GUID>CE00EDC86641BA190CF205020BDB7AE5</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -504,7 +517,7 @@ The github repository at https://github.com/illuminated-g/lv-http-server provide
         <Synchronyze_with_Directory>false</Synchronyze_with_Directory>
         <Synchronize_Directory_Path/>
       </Synchronization_Info>
-      <GUID>5722374A57482902C9ED1855E1D364EA</GUID>
+      <GUID>D7A3BBB48BD4CE748491F59C1DDE9D06</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -567,7 +580,7 @@ The github repository at https://github.com/illuminated-g/lv-http-server provide
         <Path>Palettes\Create Redirect Response.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>8C8AD50E3AED35172ED6CA0789E4E698</GUID>
+      <GUID>970A68A923999829EE8DA6F081217E1C</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -728,7 +741,7 @@ The github repository at https://github.com/illuminated-g/lv-http-server provide
         <Path>HTTP Server\Server\Enable Sessions.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>AC05D5BDCCCF2D4B32609C1C4C576C4B</GUID>
+      <GUID>505130084D946DCBF2913D207D812862</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -791,7 +804,7 @@ The github repository at https://github.com/illuminated-g/lv-http-server provide
         <Path>HTTP Server\RequestTraceLog\Add Trace.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>17E677D2491E833BE07B9D657B88D5B0</GUID>
+      <GUID>B2609B33317AEE099E0285807CE31374</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -952,7 +965,7 @@ The github repository at https://github.com/illuminated-g/lv-http-server provide
         <Path>HTTP Server\InMemoryUserProvider\Add Users.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>10B4531C76B60E7A685F41A44DD525B5</GUID>
+      <GUID>A4279C8733490C8976E3ED3D6E084759</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -1015,7 +1028,7 @@ The github repository at https://github.com/illuminated-g/lv-http-server provide
         <Path>Palettes\Lookup Form Field.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>80F655F9AAC76C6035B7ABFB75C2C839</GUID>
+      <GUID>A799B5059D3C7A3DA512E10057B1F92C</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -1288,7 +1301,7 @@ The github repository at https://github.com/illuminated-g/lv-http-server provide
         <Path>HTTP Server\Processing\Update Value.vim</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>AF51E1F397C5921174011994090356D7</GUID>
+      <GUID>54CE65ABCB24B6AD07292D2196850005</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -1365,7 +1378,7 @@ The github repository at https://github.com/illuminated-g/lv-http-server provide
         <Path>Palettes\Basic Encoder Constant.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>90ED789435C1641DA8B83CF2D99DC68A</GUID>
+      <GUID>7CE97BE0DB50F3C1C87C447921C7B3C5</GUID>
     </Functions_Palette_Data>
     <Controls_Palette_Data>
       <Parent_Palette_Index>-1</Parent_Palette_Index>
@@ -1400,7 +1413,7 @@ The github repository at https://github.com/illuminated-g/lv-http-server provide
         <Path>HTTP Server</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>D39E1A29A980D86FB9B680DAD6A7573F</GUID>
+      <GUID>29808F5C2E8A7B8A5119A13043237C8C</GUID>
     </Controls_Palette_Data>
     <Controls_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -2009,7 +2022,7 @@ The github repository at https://github.com/illuminated-g/lv-http-server provide
         <Path>HTTP Server\WebSocket Data.ctl</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>2DC8D883CE84615DE7FA68926AD59ED8</GUID>
+      <GUID>6804F094C8FA980FD11E9D760C6F80D2</GUID>
     </Controls_Palette_Data>
     <Controls_Palette_Data>
       <Parent_Palette_Index>1</Parent_Palette_Index>
@@ -2058,7 +2071,7 @@ The github repository at https://github.com/illuminated-g/lv-http-server provide
         <Path>HTTP Server\Caching\Memory Cache.ctl</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>3FEDEA48BCD8F10025D74309FDA798C3</GUID>
+      <GUID>D93D0E9C99E9E1C5E8F9446B4B87E8E2</GUID>
     </Controls_Palette_Data>
     <Controls_Palette_Data>
       <Parent_Palette_Index>1</Parent_Palette_Index>
@@ -2093,7 +2106,7 @@ The github repository at https://github.com/illuminated-g/lv-http-server provide
         <Path>HTTP Server\FormAuthentication\Options.ctl</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>835E08C910F37964CA9C48CB24770B23</GUID>
+      <GUID>DB8B682893E6563C5B5DBB7E81AD5D48</GUID>
     </Controls_Palette_Data>
     <Controls_Palette_Data>
       <Parent_Palette_Index>1</Parent_Palette_Index>
@@ -2142,7 +2155,7 @@ The github repository at https://github.com/illuminated-g/lv-http-server provide
         <Path>HTTP Server\Security\Ref Data.ctl</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>BE7DA5A41FE4B847ED477DE9DC3C3FD8</GUID>
+      <GUID>B08A41EBBE3262A27F94FDDA5AAC55BC</GUID>
     </Controls_Palette_Data>
     <Controls_Palette_Data>
       <Parent_Palette_Index>1</Parent_Palette_Index>
@@ -2205,7 +2218,7 @@ The github repository at https://github.com/illuminated-g/lv-http-server provide
         <Path>HTTP Server\Server\Ref Data.ctl</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>3E7BD7CAE50290CDCC326142C7774834</GUID>
+      <GUID>FB2C25DB44E9983266AE40FC523F1EA1</GUID>
     </Controls_Palette_Data>
     <Controls_Palette_Data>
       <Parent_Palette_Index>1</Parent_Palette_Index>
@@ -2240,7 +2253,7 @@ The github repository at https://github.com/illuminated-g/lv-http-server provide
         <Path>HTTP Server\WebSocket Handler\Server Map.ctl</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>F487BC636792436AA2101845BDB23BB4</GUID>
+      <GUID>BF704090580387770E20104CE5D86775</GUID>
     </Controls_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>

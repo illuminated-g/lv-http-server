@@ -62,6 +62,10 @@
 				<Item Name="Test Query Auth.vi" Type="VI" URL="../Test/Test Query Auth.vi"/>
 				<Item Name="TestQueryAuth.lvclass" Type="LVClass" URL="../Test/TestQueryAuth/TestQueryAuth.lvclass"/>
 			</Item>
+			<Item Name="Query Parameters" Type="Folder">
+				<Item Name="Test Query Parameters.vi" Type="VI" URL="../Test/Test Query Parameters.vi"/>
+				<Item Name="TestQueryParamController.lvclass" Type="LVClass" URL="../Test/TestQueryParamController/TestQueryParamController.lvclass"/>
+			</Item>
 			<Item Name="Sessions" Type="Folder">
 				<Item Name="Test Sessions Controller.lvclass" Type="LVClass" URL="../Test/Test Sessions Controller/Test Sessions Controller.lvclass"/>
 				<Item Name="Test Sessions.vi" Type="VI" URL="../Test/Test Sessions.vi"/>
