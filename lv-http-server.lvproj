@@ -74,6 +74,10 @@
 				<Item Name="Test Index.lvclass" Type="LVClass" URL="../Test/Test Index/Test Index.lvclass"/>
 				<Item Name="Test Simple Server.vi" Type="VI" URL="../Test/Test Simple Server.vi"/>
 			</Item>
+			<Item Name="Timer Demo" Type="Folder">
+				<Item Name="Timer Demo.lvlib" Type="Library" URL="../Test/Timer Demo/Timer Demo.lvlib"/>
+				<Item Name="Timer Demo.vi" Type="VI" URL="../Test/Timer Demo/Timer Demo.vi"/>
+			</Item>
 			<Item Name="WebSocket" Type="Folder">
 				<Item Name="Say Hi Msg Callback.vi" Type="VI" URL="../Test/WebSocket/Say Hi Msg Callback.vi"/>
 				<Item Name="Test WebSocket Page Controller.lvclass" Type="LVClass" URL="../Test/Test WebSocket Page Controller/Test WebSocket Page Controller.lvclass"/>
