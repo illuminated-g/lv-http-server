@@ -75,7 +75,7 @@
 				<Item Name="Test Simple Server.vi" Type="VI" URL="../Test/Test Simple Server.vi"/>
 			</Item>
 			<Item Name="WebSocket" Type="Folder">
-				<Item Name="Say Hi Msg Callback.vi" Type="VI" URL="/Z/IlluminatedG/Say Hi Msg Callback.vi"/>
+				<Item Name="Say Hi Msg Callback.vi" Type="VI" URL="../Test/WebSocket/Say Hi Msg Callback.vi"/>
 				<Item Name="Test WebSocket Page Controller.lvclass" Type="LVClass" URL="../Test/Test WebSocket Page Controller/Test WebSocket Page Controller.lvclass"/>
 				<Item Name="Test WebSocket Upgrade.vi" Type="VI" URL="../Test/WebSocket/Test WebSocket Upgrade.vi"/>
 				<Item Name="WebSocket Test UI Refs.lvclass" Type="LVClass" URL="../Test/WebSocket Test UI Refs/WebSocket Test UI Refs.lvclass"/>
@@ -126,7 +126,6 @@
 				<Item Name="NI_FileType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/lvfile.llb/NI_FileType.lvlib"/>
 				<Item Name="NI_PackedLibraryUtility.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/LVLibp/NI_PackedLibraryUtility.lvlib"/>
 				<Item Name="NI_PtbyPt.lvlib" Type="Library" URL="/&lt;vilib&gt;/ptbypt/NI_PtbyPt.lvlib"/>
-				<Item Name="NI_WebServices.lvlib" Type="Library" URL="/&lt;vilib&gt;/wsapi/NI_WebServices.lvlib"/>
 				<Item Name="Not Found Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Not Found Dialog.vi"/>
 				<Item Name="Search and Replace Pattern.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Search and Replace Pattern.vi"/>
 				<Item Name="Set Bold Text.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set Bold Text.vi"/>
