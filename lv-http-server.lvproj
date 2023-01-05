@@ -26,71 +26,10 @@
 			<Item Name="Security Service Constant.vi" Type="VI" URL="../Palettes/Security Service Constant.vi"/>
 			<Item Name="User Constant.vi" Type="VI" URL="../Palettes/User Constant.vi"/>
 		</Item>
-		<Item Name="Test" Type="Folder">
-			<Item Name="Auth Service" Type="Folder">
-				<Item Name="Test Auth Service.vi" Type="VI" URL="../Test/Test Auth Service.vi"/>
-				<Item Name="TestAuthController.lvclass" Type="LVClass" URL="../Test/TestAuthController/TestAuthController.lvclass"/>
-				<Item Name="TestUser.lvclass" Type="LVClass" URL="../Test/TestUser/TestUser.lvclass"/>
-			</Item>
-			<Item Name="CSRF" Type="Folder">
-				<Item Name="Test CSRF.vi" Type="VI" URL="../Test/CSRF Protection/Test CSRF.vi"/>
-				<Item Name="TestCSRFController.lvclass" Type="LVClass" URL="../Test/TestCSRFController/TestCSRFController.lvclass"/>
-			</Item>
-			<Item Name="File Upload" Type="Folder">
-				<Item Name="File Upload Controller.lvclass" Type="LVClass" URL="../Test/File Upload Controller/File Upload Controller.lvclass"/>
-				<Item Name="Test File Upload.vi" Type="VI" URL="../Test/File Upload/Test File Upload.vi"/>
-			</Item>
-			<Item Name="Files" Type="Folder">
-				<Item Name="www" Type="Folder">
-					<Item Name="ig.png" Type="Document" URL="../Test/FileServe/www/ig.png"/>
-					<Item Name="index.html" Type="Document" URL="../Test/FileServe/www/index.html"/>
-				</Item>
-				<Item Name="Serve Web Root.vi" Type="VI" URL="../Test/Serve Web Root.vi"/>
-				<Item Name="Test Invalid Path Segment.vi" Type="VI" URL="../Test/Test Invalid Path Segment.vi"/>
-				<Item Name="test.jpg" Type="Document" URL="../Test/FileServe/test.jpg"/>
-			</Item>
-			<Item Name="Forms" Type="Folder">
-				<Item Name="Test Basic Forms.vi" Type="VI" URL="../Test/Test Basic Forms.vi"/>
-			</Item>
-			<Item Name="HTTPS" Type="Folder">
-				<Item Name="Test HTTPS Controller.lvclass" Type="LVClass" URL="../Test/Test HTTPS Controller/Test HTTPS Controller.lvclass"/>
-				<Item Name="Test HTTPS.vi" Type="VI" URL="../Test/Test HTTPS.vi"/>
-				<Item Name="Test TLS.vi" Type="VI" URL="../Test/HTTPS/Test TLS.vi"/>
-			</Item>
-			<Item Name="Query Auth" Type="Folder">
-				<Item Name="QueryAuthController.lvclass" Type="LVClass" URL="../Test/QueryAuthController/QueryAuthController.lvclass"/>
-				<Item Name="Test Query Auth.vi" Type="VI" URL="../Test/Test Query Auth.vi"/>
-				<Item Name="TestQueryAuth.lvclass" Type="LVClass" URL="../Test/TestQueryAuth/TestQueryAuth.lvclass"/>
-			</Item>
-			<Item Name="Query Parameters" Type="Folder">
-				<Item Name="Test Query Parameters.vi" Type="VI" URL="../Test/Test Query Parameters.vi"/>
-				<Item Name="TestQueryParamController.lvclass" Type="LVClass" URL="../Test/TestQueryParamController/TestQueryParamController.lvclass"/>
-			</Item>
-			<Item Name="Sessions" Type="Folder">
-				<Item Name="Test Sessions Controller.lvclass" Type="LVClass" URL="../Test/Test Sessions Controller/Test Sessions Controller.lvclass"/>
-				<Item Name="Test Sessions.vi" Type="VI" URL="../Test/Test Sessions.vi"/>
-			</Item>
-			<Item Name="Test Index" Type="Folder">
-				<Item Name="Test Index.lvclass" Type="LVClass" URL="../Test/Test Index/Test Index.lvclass"/>
-				<Item Name="Test Simple Server.vi" Type="VI" URL="../Test/Test Simple Server.vi"/>
-			</Item>
-			<Item Name="Timer Demo" Type="Folder">
-				<Item Name="Timer Demo.lvlib" Type="Library" URL="../Test/Timer Demo/Timer Demo.lvlib"/>
-				<Item Name="Timer Demo.vi" Type="VI" URL="../Test/Timer Demo/Timer Demo.vi"/>
-			</Item>
-			<Item Name="WebSocket" Type="Folder">
-				<Item Name="Say Hi Msg Callback.vi" Type="VI" URL="../Test/WebSocket/Say Hi Msg Callback.vi"/>
-				<Item Name="Test WebSocket Page Controller.lvclass" Type="LVClass" URL="../Test/Test WebSocket Page Controller/Test WebSocket Page Controller.lvclass"/>
-				<Item Name="Test WebSocket Upgrade.vi" Type="VI" URL="../Test/WebSocket/Test WebSocket Upgrade.vi"/>
-				<Item Name="WebSocket Test UI Refs.lvclass" Type="LVClass" URL="../Test/WebSocket Test UI Refs/WebSocket Test UI Refs.lvclass"/>
-				<Item Name="ws-index.html" Type="Document" URL="../Test/WebSocket/ws-index.html"/>
-			</Item>
-		</Item>
 		<Item Name="HTTP Server.lvlib" Type="Library" URL="../HTTP Server/HTTP Server.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="1D String Array to Delimited String.vi" Type="VI" URL="/&lt;vilib&gt;/AdvancedString/1D String Array to Delimited String.vi"/>
-				<Item Name="Application Directory.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Application Directory.vi"/>
 				<Item Name="Assert Scalar Numeric Type.vim" Type="VI" URL="/&lt;vilib&gt;/Utility/TypeAssert/Assert Scalar Numeric Type.vim"/>
 				<Item Name="Base64.lvlib" Type="Library" URL="/&lt;vilib&gt;/IlluminatedG/lv-web-crypto/lv-base64/Base64.lvlib"/>
 				<Item Name="BuildHelpPath.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/BuildHelpPath.vi"/>
@@ -129,7 +68,6 @@
 				<Item Name="LVRectTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVRectTypeDef.ctl"/>
 				<Item Name="NI_FileType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/lvfile.llb/NI_FileType.lvlib"/>
 				<Item Name="NI_PackedLibraryUtility.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/LVLibp/NI_PackedLibraryUtility.lvlib"/>
-				<Item Name="NI_PtbyPt.lvlib" Type="Library" URL="/&lt;vilib&gt;/ptbypt/NI_PtbyPt.lvlib"/>
 				<Item Name="Not Found Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Not Found Dialog.vi"/>
 				<Item Name="Search and Replace Pattern.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Search and Replace Pattern.vi"/>
 				<Item Name="Set Bold Text.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set Bold Text.vi"/>

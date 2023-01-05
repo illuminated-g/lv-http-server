@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2022-01-15 11:25:16" Modified_Date="2022-11-21 19:13:04" Creator="Localization Tester" Comments="" ID="cf0507b7611df40e1c3660dcfbb0b9c5">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2022-01-15 11:25:16" Modified_Date="2023-01-04 14:50:08" Creator="Localization Tester" Comments="" ID="017ce811cc210dc086eab4f5f6f7d25d">
   <Library_General_Settings>
     <Package_File_Name>IlluminatedG_lib_IG_HTTP_Server</Package_File_Name>
-    <Library_Version>0.5.1.31</Library_Version>
+    <Library_Version>0.5.1.32</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>.</Library_Source_Folder>
     <Library_Output_Folder>..\vip</Library_Output_Folder>
@@ -22,13 +22,13 @@
       <External_Dependencies>illuminatedg_lib_ig_stream_base &gt;= 1.2.0.46</External_Dependencies>
       <External_Dependencies>illuminatedg_lib_ig_tcp_stream &gt;= 0.1.0.42</External_Dependencies>
       <External_Dependencies>illuminatedg_lib_ig_web&amp;crypto &gt;= 0.1.0.9</External_Dependencies>
-      <External_Dependencies>illuminatedg_lib_ig_websocket_stream &gt;= 1.0.0.13</External_Dependencies>
+      <External_Dependencies>illuminatedg_lib_ig_websocket_stream &gt;= 1.0.0.14</External_Dependencies>
       <Direct_Dependencies>illuminatedg_lib_ig_http_utils-1.0.1.46</Direct_Dependencies>
       <Direct_Dependencies>illuminatedg_lib_ig_simple_msg-1.0.0.35</Direct_Dependencies>
       <Direct_Dependencies>illuminatedg_lib_ig_stream_base-1.2.0.46</Direct_Dependencies>
       <Direct_Dependencies>illuminatedg_lib_ig_tcp_stream-0.1.0.42</Direct_Dependencies>
       <Direct_Dependencies>illuminatedg_lib_ig_web&amp;crypto-0.1.0.9</Direct_Dependencies>
-      <Direct_Dependencies>illuminatedg_lib_ig_websocket_stream-1.0.0.13</Direct_Dependencies>
+      <Direct_Dependencies>illuminatedg_lib_ig_websocket_stream-1.0.0.14</Direct_Dependencies>
     </Package_Dependencies>
     <Custom_Action_VIs>
       <Pre-Build_VI/>
@@ -42,6 +42,8 @@
     <Description>
       <One_Line_Description_Summary>HTTP Web Server implemented with 100% LabVIEW. Includes HTTPS, Form handling, Sessions, WebSocket Upgrades, and more.</One_Line_Description_Summary>
       <Description>HTTP Web Server for LabVIEW applications. Provides easy to use common features such as file serving and request handling akin to LabVIEW Web Services. The underlying processing flow is comprised of many steps that can be augmented with additional functionality by registering interface implementations specific to each step.
+
+For demos and examples see the &lt;b&gt;IG HTTP Server Examples&lt;/b&gt; package.
 
 &lt;b&gt;This project is under active development and as such should not be considered a secure web server implementation without your own verification with the features you use.&lt;/b&gt; This server does aim to default to the more secure option when possible and enables important features such as HTTPS and secure WebSockets but care should always be taken any time a server is exposed to a network.
 
@@ -62,7 +64,11 @@ Needs work:
       <Copyright/>
       <Packager>Derrick Bommarito</Packager>
       <URL>https://github.com/illuminated-g/lv-http-server</URL>
-      <Release_Notes>- Pull WebSocket example message callback into folder which was mistakenly saved out of source.
+      <Release_Notes>0.5.1.31
+- Remove examples from server package so new examples can be created without version bumping server.
+
+0.5.1.30
+- Pull WebSocket example message callback into folder which was mistakenly saved out of source.
 
 Known Issues:
 - Cache control does not work properly.</Release_Notes>
@@ -131,12 +137,6 @@ Known Issues:
       <Destination_Overrides>
         <Path>.</Path>
         <Destination>0</Destination>
-        <Additional_Destination>false</Additional_Destination>
-        <Additional_Destination_Index>0</Additional_Destination_Index>
-      </Destination_Overrides>
-      <Destination_Overrides>
-        <Path>Test</Path>
-        <Destination>1</Destination>
         <Additional_Destination>false</Additional_Destination>
         <Additional_Destination_Index>0</Additional_Destination_Index>
       </Destination_Overrides>
@@ -463,7 +463,7 @@ Known Issues:
         <Path>HTTP Server\Server\Create WebSocket Resource.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>54CD4AD43CFAC361E2C2977E2CCCF5FE</GUID>
+      <GUID>23CCF5F93011B46524552E8E6FD49C7A</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -498,7 +498,7 @@ Known Issues:
         <Path>HTTP Server\StandardFileServe\Init.vi</Path>
         <VI_Title>Standard File Serve</VI_Title>
       </Items_Data>
-      <GUID>DB655E6866788B2C59611E8324D3055D</GUID>
+      <GUID>48D42881CA9E95A1B3AAA9427B0BEBB2</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -519,7 +519,7 @@ Known Issues:
         <Synchronyze_with_Directory>false</Synchronyze_with_Directory>
         <Synchronize_Directory_Path/>
       </Synchronization_Info>
-      <GUID>48DCBC782C441AAD473812CF3FE35FC2</GUID>
+      <GUID>43D7E60F247203752D97E262CA60897C</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -582,7 +582,7 @@ Known Issues:
         <Path>Palettes\Create Redirect Response.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>1215B6BD5884828BD77B6FC3892F04AA</GUID>
+      <GUID>3FBBAE7BD95052F12DBB16F5FB3331C4</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -743,7 +743,7 @@ Known Issues:
         <Path>HTTP Server\Server\Enable Sessions.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>E4CDFA15CF41761B4AD6D55FE3C8F86A</GUID>
+      <GUID>F83B17B36F2F25742D56ED8CE46095D2</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -806,7 +806,7 @@ Known Issues:
         <Path>HTTP Server\RequestTraceLog\Add Trace.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>5DB8B4BFF808A69F4A5BB561880E788D</GUID>
+      <GUID>90917DFC7599C63CB3F0F5747C94EDD6</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -967,7 +967,7 @@ Known Issues:
         <Path>HTTP Server\InMemoryUserProvider\Add Users.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>D748205488DE0D7916B513218F90A077</GUID>
+      <GUID>9A9610707CEBF7402B3CA3DDED2583C7</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -1030,7 +1030,7 @@ Known Issues:
         <Path>Palettes\Lookup Form Field.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>6C3D151568C5A75130C774E20FEFD6CE</GUID>
+      <GUID>A65E783D683AFAC928E0E63758CDA049</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -1303,7 +1303,7 @@ Known Issues:
         <Path>HTTP Server\Processing\Update Value.vim</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>7D2E23B4633B4F1006836F2060988D5F</GUID>
+      <GUID>329E9B56772095BEB23431012CF64AAD</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -1380,7 +1380,7 @@ Known Issues:
         <Path>Palettes\Basic Encoder Constant.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>B0FE4315679A647EA59DBCB836177E14</GUID>
+      <GUID>2EB24DF242DB0C46EDF9B6C512600C0D</GUID>
     </Functions_Palette_Data>
     <Controls_Palette_Data>
       <Parent_Palette_Index>-1</Parent_Palette_Index>
@@ -1415,7 +1415,7 @@ Known Issues:
         <Path>HTTP Server</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>4C075F64B06B80C04B61662AFD8C2CA2</GUID>
+      <GUID>EF8A34BF29B21204997A8763B2FD069C</GUID>
     </Controls_Palette_Data>
     <Controls_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -2024,7 +2024,7 @@ Known Issues:
         <Path>HTTP Server\WebSocket Data.ctl</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>CCBB72651FA1CC1CC3025455B352A65A</GUID>
+      <GUID>5A99DCFA8A385B16EA5DC32E7D4F0F53</GUID>
     </Controls_Palette_Data>
     <Controls_Palette_Data>
       <Parent_Palette_Index>1</Parent_Palette_Index>
@@ -2073,7 +2073,7 @@ Known Issues:
         <Path>HTTP Server\Caching\Memory Cache.ctl</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>F08D06B404B29290F8F5C063F9934DFA</GUID>
+      <GUID>B4C82290D0925123AF30CA5DF8FBAB77</GUID>
     </Controls_Palette_Data>
     <Controls_Palette_Data>
       <Parent_Palette_Index>1</Parent_Palette_Index>
@@ -2108,7 +2108,7 @@ Known Issues:
         <Path>HTTP Server\FormAuthentication\Options.ctl</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>C59F704426F46BE87F361D9B8616CFB8</GUID>
+      <GUID>EA9C7687608EA22FD64917ECED678E37</GUID>
     </Controls_Palette_Data>
     <Controls_Palette_Data>
       <Parent_Palette_Index>1</Parent_Palette_Index>
@@ -2157,7 +2157,7 @@ Known Issues:
         <Path>HTTP Server\Security\Ref Data.ctl</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>F7C308F502448250A79211C374847DA5</GUID>
+      <GUID>B02954AEC28E1909842D6CEA790B5E66</GUID>
     </Controls_Palette_Data>
     <Controls_Palette_Data>
       <Parent_Palette_Index>1</Parent_Palette_Index>
@@ -2220,7 +2220,7 @@ Known Issues:
         <Path>HTTP Server\Server\Ref Data.ctl</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>957915D07A8B1883755AA68A42505E16</GUID>
+      <GUID>04E59561A51E1B0C49B1D445CC9D1ACA</GUID>
     </Controls_Palette_Data>
     <Controls_Palette_Data>
       <Parent_Palette_Index>1</Parent_Palette_Index>
@@ -2255,7 +2255,7 @@ Known Issues:
         <Path>HTTP Server\WebSocket Handler\Server Map.ctl</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>7605435DF911059BD00C678FE7A0932D</GUID>
+      <GUID>8B4F2A4937F524C49943C8802550D5DC</GUID>
     </Controls_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>
