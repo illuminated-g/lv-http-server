@@ -99,9 +99,6 @@
 	<Item Name="Callback Types" Type="Folder">
 		<Item Name="Request Callback VI Type.vi" Type="VI" URL="../Request Callback VI Type.vi"/>
 	</Item>
-	<Item Name="Containers" Type="Folder">
-		<Item Name="Values.lvclass" Type="LVClass" URL="../Values/Values.lvclass"/>
-	</Item>
 	<Item Name="Controllers" Type="Folder">
 		<Item Name="StandardFileServe.lvclass" Type="LVClass" URL="../StandardFileServe/StandardFileServe.lvclass"/>
 	</Item>
@@ -173,4 +170,5 @@
 	<Item Name="Processing.lvclass" Type="LVClass" URL="../Processing/Processing.lvclass"/>
 	<Item Name="Server.lvclass" Type="LVClass" URL="../Server/Server.lvclass"/>
 	<Item Name="Session.lvclass" Type="LVClass" URL="../Session/Session.lvclass"/>
+	<Item Name="Values.lvclass" Type="LVClass" URL="../Values/Values.lvclass"/>
 </Library>
