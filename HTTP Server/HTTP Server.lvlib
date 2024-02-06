@@ -164,6 +164,8 @@
 	<Item Name="Logging" Type="Folder">
 		<Item Name="RequestTraceLog.lvclass" Type="LVClass" URL="../RequestTraceLog/RequestTraceLog.lvclass"/>
 	</Item>
+	<Item Name="Proxy" Type="Folder"/>
+	<Item Name="VHost" Type="Folder"/>
 	<Item Name="WebSockets" Type="Folder">
 		<Item Name="WebSocket Handler.lvclass" Type="LVClass" URL="../WebSocket Handler/WebSocket Handler.lvclass"/>
 	</Item>
