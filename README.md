@@ -87,15 +87,17 @@ The main use for sessions is to save named values that correspond to a specific 
 
 # Processing Flow
 
+[Detailed Request Flow Description](Documentation/requestflow.md)
+
 This server provides flexibility and extensibility via a handful of specific request processing steps that can have additional functionality plugged in. The following flowchart maps out the processing flow.
 
-![Request Processing Flowchart](https://raw.githubusercontent.com/illuminated-g/lv-http-server/main/Documentation/images/Request%20Flow.drawio.png "Request Processing Flowchart")
+![Request Processing Flowchart](Documentation/images/Request%20Flow.drawio.png "Request Processing Flowchart")
 
 <br/>
 
 The processing flow is kicked off by launching an async VI when new connections are created. The above flow chart is implemented by the following block diagram:
 
-![Request Processing Block Diagram](https://raw.githubusercontent.com/illuminated-g/lv-http-server/main/Documentation/images/processasync.png "Request Processing Block Diagram")
+![Request Processing Block Diagram](Documentation/images/processasync.png "Request Processing Block Diagram")
 
 <br/>
 
@@ -107,7 +109,7 @@ Aside from Controllers, which can certainly grow quite large, the expectation is
 
 For instance, the following code of a Response Handler is small and serves a single purpose:
 
-![FileExistChecker Code](https://raw.githubusercontent.com/illuminated-g/lv-http-server/main/Documentation/images/fileexistchecker.png "FileExistChecker Code")
+![FileExistChecker Code](Documentation/images/fileexistchecker.png "FileExistChecker Code")
 
 <br/>
 
@@ -129,11 +131,11 @@ Built-in handlers and controllers will typically have higher numeric values for 
 
 Controllers are generally selected by a regular expression they specify with a dynamic dispatch VI:
 
-![Controller Path Regex](https://raw.githubusercontent.com/illuminated-g/lv-http-server/main/Documentation/images/pathregex.png "Controller Path Regex")
+![Controller Path Regex](Documentation/images/pathregex.png "Controller Path Regex")
 
 The built-in regular expression handling breaks out submatches as specific arguments available to the controller:
 
-![Controller Path Arguments](https://raw.githubusercontent.com/illuminated-g/lv-http-server/main/Documentation/images/pathargs.png "Controller Path Arguments")
+![Controller Path Arguments](Documentation/images/pathargs.png "Controller Path Arguments")
 
 Note that with this regular expression implementation, the entire match is returned as element 0 so the first submatch is at 1. There are plans to build an API for generating regular expressions for anyone not comfortable with regexes but providing raw regular expressions will always be available for anyone needing more flexibility.
 
@@ -220,6 +222,6 @@ After the Handlers are run there are several possible results. If a Handler clea
 The HTTP Server has a few debugging and logging features built-in though unlike most other web servers there isn't a default location to save logs to disk. Any built-in logging will be accessible during run-time and can be configured to use logging paths by the containing application.
 
 One of the key features for debugging the request processing flow is the Trace Log:
-![Request Trace Log](https://raw.githubusercontent.com/illuminated-g/lv-http-server/main/Documentation/images/tracelog.png "Trace Log Strict Type Def")
+![Request Trace Log](Documentation/images/tracelog.png "Trace Log Strict Type Def")
 
 This shows information about the client making the request, each of the steps that occurred during processing, and the response details. It will highlight any steps that return errors that would cause exception flows to be triggered. For Handlers that return an item, such as request initialization handlers returning an Early Reponse or Controllers returning the main Response, the type of the returned item is saved. The trace log also stores the execution time of each step or call and the overall processing duration for determining processing performance and which steps may be causing bottle-necks.
