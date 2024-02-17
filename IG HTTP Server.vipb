@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2022-01-15 11:25:16" Modified_Date="2024-02-17 11:59:49" Creator="Localization Tester" Comments="" ID="4a212f9620ccbe634495609a49811f96">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2022-01-15 11:25:16" Modified_Date="2024-02-17 13:53:47" Creator="Localization Tester" Comments="" ID="0ee51a3b9ff8479728cf69832552835c">
   <Library_General_Settings>
     <Package_File_Name>IlluminatedG_lib_IG_HTTP_Server</Package_File_Name>
-    <Library_Version>0.5.3.38</Library_Version>
+    <Library_Version>0.6.0.39</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>.</Library_Source_Folder>
     <Library_Output_Folder>..\vip</Library_Output_Folder>
@@ -66,6 +66,10 @@ Needs work:
       <URL>https://github.com/illuminated-g/lv-http-server</URL>
       <Release_Notes>Known Issues:
 - Cache control does not work properly.
+
+0.6.0.38
+- Connection: keep-alive support
+- Added more detailed documentation to repository
 
 0.5.3.36
 - Removal of VIMs throughout implementation preventing builds on RT.
