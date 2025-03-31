@@ -76,13 +76,6 @@
 			<Item Name="PathRegex Router.lvclass" Type="LVClass" URL="../PathRegex Router/PathRegex Router.lvclass"/>
 			<Item Name="PathValidation.lvclass" Type="LVClass" URL="../PathValidation/PathValidation.lvclass"/>
 		</Item>
-		<Item Name="Services" Type="Folder"/>
-		<Item Name="Sessions" Type="Folder"/>
-		<Item Name="TCP" Type="Folder">
-			<Item Name="HTTP TCP Client.lvclass" Type="LVClass" URL="../HTTP TCP Client/HTTP TCP Client.lvclass"/>
-			<Item Name="HTTP TCP Server.lvclass" Type="LVClass" URL="../HTTP TCP Server/HTTP TCP Server.lvclass"/>
-		</Item>
-		<Item Name="Utilities" Type="Folder"/>
 	</Item>
 	<Item Name="Authentication" Type="Folder">
 		<Item Name="BasicPasswordEncoder.lvclass" Type="LVClass" URL="../BasicPasswordEncoder/BasicPasswordEncoder.lvclass"/>
@@ -165,6 +158,11 @@
 		<Item Name="RequestTraceLog.lvclass" Type="LVClass" URL="../RequestTraceLog/RequestTraceLog.lvclass"/>
 	</Item>
 	<Item Name="Proxy" Type="Folder"/>
+	<Item Name="TCP" Type="Folder">
+		<Property Name="NI.LibItem.Scope" Type="Int">1</Property>
+		<Item Name="HTTP TCP Client.lvclass" Type="LVClass" URL="../HTTP TCP Client/HTTP TCP Client.lvclass"/>
+		<Item Name="HTTP TCP Server.lvclass" Type="LVClass" URL="../HTTP TCP Server/HTTP TCP Server.lvclass"/>
+	</Item>
 	<Item Name="VHost" Type="Folder"/>
 	<Item Name="WebSockets" Type="Folder">
 		<Item Name="WebSocket Handler.lvclass" Type="LVClass" URL="../WebSocket Handler/WebSocket Handler.lvclass"/>
