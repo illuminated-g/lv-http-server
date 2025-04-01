@@ -9,7 +9,6 @@ Connection Handlers have the option of rejecting a connection by returning a Tru
 This can be useful for performing firewalling, rate limiting, or client blacklisting based on IP. None of these methods should count as security as connection information can easily be spoofed but refusing connections can be useful for performance savings. Proper authentication and authorization should be implemented in later handlers.</Property>
 	<Property Name="NI.Lib.HelpPath" Type="Str"></Property>
 	<Property Name="NI.Lib.Icon" Type="Bin">)!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!)Z!!!*Q(C=\&gt;3^&lt;&gt;N1&amp;-8RES"&amp;!&amp;@;)"#UQ6V"+WC&amp;GR(5MN1+JR2A&amp;S+1)L67O#NI";X!`0HYL+AQ\-9'!M2]@B*VXM@^G31IN?/\^%X47]@$K]=]XPL&gt;XT+QH%X4%DZ`PTT?:TSU?KVES[?`[_\WPW]PV8`/&lt;_/P_P6Z@"\`^T']^1LY?-)8T3]C?N&amp;.4XJI,DU6?:%8?:%8?:'&lt;X/1G.\H*4:\E3:\E3:\E32\E12\E12\E1&gt;Y;O=B&amp;,H*)2@'C5,&amp;JM5%R'9K+D]*4?!J0Y?'H#E`B+4S&amp;J`!Q297H]"3?QF.Y7+&lt;#5XA+4_%J0'T6*.5;/:\#Q`9S(O-R(O-R(EL+?!T!&amp;$-&lt;GUVAS!S;%_-R(O0B6-:D0-:D0-&lt;$M)T(?)T(?)S(*?WKO'HG2I[(&lt;:2Y%E`C34S*B[W6?"*0YEE]C9&gt;S3DS**U%E":0.)3B:F%R)@C3?R-/8%E`C34S**`%QV/Z1NCMT;_:'DC@Q"*\!%XA#$VMI]!3?Q".Y!A`&lt;+P!%HM!4?!)0J22Y!E`A#3""5=ILW#R9'%Q+AM$$8XN;INUF.UGU*P7(6`WB6(`9V"]C^9&gt;$`;;LXUTVG[2_]&gt;5PKPL&amp;5L])[P_=/FI&gt;IVZ%@@%]56=_,`1T@;1@[(P[DL[FL_GL??E\4\R?L\J=,DK@TRL(59@$1@P^8LP&gt;4NPN6OPV7KP6[P9;_%'\P2#7^^,!O4@$]?FR/"Z``P\VN"F0XJR/QT,HIY^`Y.WIL\KPQT8[!]4Q):E!!!!!</Property>
-	<Property Name="NI.Lib.SourceVersion" Type="Int">536903680</Property>
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Property Name="NI.LVClass.ClassNameVisibleInProbe" Type="Bool">true</Property>
@@ -31,13 +30,13 @@ This can be useful for performing firewalling, rate limiting, or client blacklis
 		<Property Name="NI.ClassItem.State" Type="Int">1342714368</Property>
 	</Item>
 	<Item Name="Processing Step.vi" Type="VI" URL="../Processing Step.vi">
-		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!(W!!!!#A!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!*M!]1!!!!!!!!!#%5B56&amp;!A5W6S&gt;G6S,GRW&lt;'FC%V"S&lt;W.F=X.J&lt;G=A5X2F=#ZD&gt;'Q!&lt;5!7!!A+1W^O&lt;G6D&gt;'FP&lt;A&gt;3:8&amp;V:8.U"V*P&gt;82J&lt;G=01W^O&gt;(*P&lt;'RF=C"*&lt;GFU#E.P&lt;H2S&lt;WRM:8))5G6T='^O=W5(1WRF97ZV=!F&amp;?'.F=(2J&lt;WY!!!^1=G^D:8.T;7ZH)&amp;.U:8!!5%"Q!"Y!!#Y23&amp;255#"4:8*W:8)O&lt;(:M;7);1W^O&lt;G6D&gt;'FP&lt;C")97ZE&lt;'6S,GRW9WRB=X-!!":$&lt;WZO:7.U;7^O)%BB&lt;G2M:8)A&lt;X6U!!!A1&amp;!!!Q!!!!%!!B.F=H*P=C"J&lt;C!I&lt;G]A:8*S&lt;X)J!%Z!=!!?!!!O%5B56&amp;!A5W6S&gt;G6S,GRW&lt;'FC'E.P&lt;GZF9X2J&lt;WYA3'&amp;O:'RF=CZM&gt;G.M98.T!!!61W^O&lt;G6D&gt;'FP&lt;C")97ZE&lt;'6S)'FO!&amp;1!]!!-!!-!"!!&amp;!!9!"!!%!!1!"!!(!!1!"!!)!A!!?!!!$1A!!!!!!!!*!!!!D1M!!!!!!!!!!!!!!!!!!!!!!!!)!!!!!!!!!!!!!!#1!!!!!!%!#1!!!!!</Property>
+		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!))!!!!#Q!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!*M!]1!!!!!!!!!#%5B56&amp;!A5W6S&gt;G6S,GRW&lt;'FC%V"S&lt;W.F=X.J&lt;G=A5X2F=#ZD&gt;'Q!&lt;5!7!!A+1W^O&lt;G6D&gt;'FP&lt;A&gt;3:8&amp;V:8.U"V*P&gt;82J&lt;G=01W^O&gt;(*P&lt;'RF=C"*&lt;GFU#E.P&lt;H2S&lt;WRM:8))5G6T='^O=W5)1W^N='RF&gt;'5*28BD:8"U;7^O!!^1=G^D:8.T;7ZH)&amp;.U:8!!%E"!!!(`````!!5%5X2F=!!!5%"Q!"Y!!#Y23&amp;255#"4:8*W:8)O&lt;(:M;7);1W^O&lt;G6D&gt;'FP&lt;C")97ZE&lt;'6S,GRW9WRB=X-!!":$&lt;WZO:7.U;7^O)%BB&lt;G2M:8)A&lt;X6U!!!A1&amp;!!!Q!!!!%!!B.F=H*P=C"J&lt;C!I&lt;G]A:8*S&lt;X)J!%Z!=!!?!!!O%5B56&amp;!A5W6S&gt;G6S,GRW&lt;'FC'E.P&lt;GZF9X2J&lt;WYA3'&amp;O:'RF=CZM&gt;G.M98.T!!!61W^O&lt;G6D&gt;'FP&lt;C")97ZE&lt;'6S)'FO!&amp;1!]!!-!!-!"!!'!!=!"!!%!!1!"!!)!!1!"!!*!A!!?!!!$1A!!!!!!!!*!!!!D1M!!!!!!!!!!!!!!!!!!!!!!!!)!!!!!!!!!!!!!!#1!!!!!!%!#A!!!!!</Property>
 		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
-		<Property Name="NI.ClassItem.Flags" Type="Int">1073741834</Property>
+		<Property Name="NI.ClassItem.Flags" Type="Int">0</Property>
 		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">false</Property>
 		<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
 		<Property Name="NI.ClassItem.MustOverride" Type="Bool">false</Property>
 		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
-		<Property Name="NI.ClassItem.State" Type="Int">1082667520</Property>
+		<Property Name="NI.ClassItem.State" Type="Int">1352933888</Property>
 	</Item>
 </LVClass>
