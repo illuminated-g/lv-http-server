@@ -2,18 +2,20 @@
   "Info":{
     "Name":"git:lv-http-server",
     "Type":"git",
-    "Source":"git@github.com:illuminated-g/lv-http-server.git",
+    "Host":"git@github.com:illuminated-g/lv-http-server.git",
+    "Path":"",
     "Branch":"main",
-    "Version":"b6ba82a998450cee6a05ffbca2e6737584f85874"
+    "Version":"4db81a283e1482436f8c74d563e129ba20607426"
   },
   "Dependencies":[
     {
       "Info":{
         "Name":"git:lv-http-util",
         "Type":"git",
-        "Source":"git@github.com:illuminated-g/lv-http-util.git",
+        "Host":"git@github.com:illuminated-g/lv-http-util.git",
+        "Path":"",
         "Branch":"main",
-        "Version":"bda00bbc797112ef6535cee6a274ddae37cad7cb"
+        "Version":"c3946507475b9dfb92b304a18b36deb18d77e8db"
       },
       "Path":"..\\lv-http-util"
     },
@@ -21,9 +23,10 @@
       "Info":{
         "Name":"git:lv-stream",
         "Type":"git",
-        "Source":"git@github.com:illuminated-g/lv-stream.git",
+        "Host":"git@github.com:illuminated-g/lv-stream.git",
+        "Path":"",
         "Branch":"master",
-        "Version":"192b98224d666d8de75f24b825a2d27940fee478"
+        "Version":"505e3d9001019fec0b4f607a60a1c0e134c89fe5"
       },
       "Path":"..\\lv-stream"
     },
@@ -31,9 +34,10 @@
       "Info":{
         "Name":"git:lv-stream-tcp",
         "Type":"git",
-        "Source":"git@github.com:illuminated-g/lv-stream-tcp.git",
+        "Host":"git@github.com:illuminated-g/lv-stream-tcp.git",
+        "Path":"",
         "Branch":"master",
-        "Version":"331cb7112b38c9c97e2ffbe941b3dde2d8e0e695"
+        "Version":"7423d03b54cda5d619f9246b217ddef96e713a6d"
       },
       "Path":"..\\lv-stream-tcp"
     },
@@ -41,9 +45,10 @@
       "Info":{
         "Name":"git:lv-stream-websocket",
         "Type":"git",
-        "Source":"git@github.com:illuminated-g/lv-stream-websocket.git",
+        "Host":"git@github.com:illuminated-g/lv-stream-websocket.git",
+        "Path":"",
         "Branch":"main",
-        "Version":"cabf154da55ba546210e41cfe21ef0880593ab97"
+        "Version":"ccbd906517afdff4091489580aa7984ee3765edb"
       },
       "Path":"..\\lv-stream-websocket"
     },
@@ -51,7 +56,8 @@
       "Info":{
         "Name":"git:lv-web-crypto",
         "Type":"git",
-        "Source":"git@github.com:illuminated-g/lv-web-crypto.git",
+        "Host":"git@github.com:illuminated-g/lv-web-crypto.git",
+        "Path":"",
         "Branch":"main",
         "Version":"bd3f9db58fcca790cc2247320a7e82d7b7af473c"
       },
