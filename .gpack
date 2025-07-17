@@ -5,7 +5,8 @@
     "Host":"git@github.com:illuminated-g/lv-http-server.git",
     "Path":"",
     "Branch":"main",
-    "Version":"4db81a283e1482436f8c74d563e129ba20607426"
+    "Version":"94b46c2f51d940645e03d668708bd777fb82c6dd",
+    "License":""
   },
   "Dependencies":[
     {
@@ -15,7 +16,8 @@
         "Host":"git@github.com:illuminated-g/lv-http-util.git",
         "Path":"",
         "Branch":"main",
-        "Version":"c3946507475b9dfb92b304a18b36deb18d77e8db"
+        "Version":"ee75373876fd159ac76f15aee5f629821ff9bb7d",
+        "License":""
       },
       "Path":"..\\lv-http-util"
     },
@@ -26,7 +28,8 @@
         "Host":"git@github.com:illuminated-g/lv-stream.git",
         "Path":"",
         "Branch":"master",
-        "Version":"505e3d9001019fec0b4f607a60a1c0e134c89fe5"
+        "Version":"2eafa50d72d318a95603fb2430ccb3bc62f4cb3e",
+        "License":""
       },
       "Path":"..\\lv-stream"
     },
@@ -37,7 +40,8 @@
         "Host":"git@github.com:illuminated-g/lv-stream-tcp.git",
         "Path":"",
         "Branch":"master",
-        "Version":"7423d03b54cda5d619f9246b217ddef96e713a6d"
+        "Version":"fbbb5029cfda9858a5ce34851c2c1c1aa7e35e2a",
+        "License":""
       },
       "Path":"..\\lv-stream-tcp"
     },
@@ -48,7 +52,8 @@
         "Host":"git@github.com:illuminated-g/lv-stream-websocket.git",
         "Path":"",
         "Branch":"main",
-        "Version":"ccbd906517afdff4091489580aa7984ee3765edb"
+        "Version":"f475d749885eefc9e50821dfc92ade5612bae5be",
+        "License":""
       },
       "Path":"..\\lv-stream-websocket"
     },
@@ -59,7 +64,8 @@
         "Host":"git@github.com:illuminated-g/lv-web-crypto.git",
         "Path":"",
         "Branch":"main",
-        "Version":"bd3f9db58fcca790cc2247320a7e82d7b7af473c"
+        "Version":"2041e1864f16d4cfb88ca307a908817f5b0048b3",
+        "License":""
       },
       "Path":"..\\lv-web-crypto"
     }
