@@ -4,6 +4,7 @@
 101 - Authentication
 
 1000 - WebSocket Handling
+1010 - Server Sent Events Handling
 
 10000 - Default
 
