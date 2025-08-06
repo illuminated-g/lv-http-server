@@ -32,7 +32,7 @@ HTTP Server implementation in LabVIEW. This project is under active development 
 
 # Overview
 
-This LV Http Server is intended to both be easy to use for common use-cases but is highly flexible in how it can process requests for those that need extensibility. For common uses such as serving files from a directory or simple URL matching to run LV code, the examples should be referenced. Examples will demonstrate the much smaller scope of details that are required for using those features than the rest of this readme covers.
+This LV Http Server is intended to both be easy to use for common use-cases but is highly flexible in how it can process requests for those that need extensibility. For common uses such as serving files from a directory or simple URL matching to run LV code, the [lv-http-server-examples](https://github.com/illuminated-g/lv-http-server-examples) should be referenced. Examples will demonstrate the much smaller scope of details that are required for using those features than the rest of this readme covers.
 
 The following is all that is needed to have a LabVIEW application serve files from a folder relative to the project/executable:
 ![Simple File Serving Example](https://raw.githubusercontent.com/illuminated-g/lv-http-server/main/Documentation/images/simplefileserve.png "Simple File Serving Example")
