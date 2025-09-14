@@ -169,6 +169,10 @@
 		<Item Name="HTTP TCP Client.lvclass" Type="LVClass" URL="../HTTP TCP Client/HTTP TCP Client.lvclass"/>
 		<Item Name="HTTP TCP Server.lvclass" Type="LVClass" URL="../HTTP TCP Server/HTTP TCP Server.lvclass"/>
 	</Item>
+	<Item Name="Templating" Type="Folder">
+		<Item Name="BasicTemplater.lvclass" Type="LVClass" URL="../BasicTemplater/BasicTemplater.lvclass"/>
+		<Item Name="TemplateVariableResolver.lvclass" Type="LVClass" URL="../TemplateVariableResolver/TemplateVariableResolver.lvclass"/>
+	</Item>
 	<Item Name="VHost" Type="Folder"/>
 	<Item Name="WebSockets" Type="Folder">
 		<Item Name="WebSocket Handler.lvclass" Type="LVClass" URL="../WebSocket Handler/WebSocket Handler.lvclass"/>
