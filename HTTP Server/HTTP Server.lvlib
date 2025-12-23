@@ -168,6 +168,7 @@
 		<Property Name="NI.LibItem.Scope" Type="Int">1</Property>
 		<Item Name="HTTP TCP Client.lvclass" Type="LVClass" URL="../HTTP TCP Client/HTTP TCP Client.lvclass"/>
 		<Item Name="HTTP TCP Server.lvclass" Type="LVClass" URL="../HTTP TCP Server/HTTP TCP Server.lvclass"/>
+		<Item Name="TCP Server.lvclass" Type="LVClass" URL="../TCP Server/TCP Server.lvclass"/>
 	</Item>
 	<Item Name="Templating" Type="Folder">
 		<Item Name="BasicTemplater.lvclass" Type="LVClass" URL="../BasicTemplater/BasicTemplater.lvclass"/>
