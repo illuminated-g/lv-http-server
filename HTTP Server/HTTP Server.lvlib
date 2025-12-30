@@ -134,6 +134,7 @@
 		<Item Name="Session Debug Info.ctl" Type="VI" URL="../Session Debug Info.ctl"/>
 		<Item Name="Trace Item.ctl" Type="VI" URL="../Trace Item.ctl"/>
 		<Item Name="Trace Log.ctl" Type="VI" URL="../Trace Log.ctl"/>
+		<Item Name="WebSocket Format.ctl" Type="VI" URL="../WebSocket Format.ctl"/>
 	</Item>
 	<Item Name="Interfaces" Type="Folder">
 		<Item Name="Authentication" Type="Folder">
@@ -155,6 +156,7 @@
 		<Item Name="Handler.lvclass" Type="LVClass" URL="../Handler/Handler.lvclass"/>
 		<Item Name="Service.lvclass" Type="LVClass" URL="../Service/Service.lvclass"/>
 		<Item Name="SSE Manager.lvclass" Type="LVClass" URL="../SSE Manager/SSE Manager.lvclass"/>
+		<Item Name="WebSocket Manager.lvclass" Type="LVClass" URL="../WebSocket Manager/WebSocket Manager.lvclass"/>
 	</Item>
 	<Item Name="Logging" Type="Folder">
 		<Item Name="RequestTraceLog.lvclass" Type="LVClass" URL="../RequestTraceLog/RequestTraceLog.lvclass"/>
@@ -170,7 +172,9 @@
 	</Item>
 	<Item Name="VHost" Type="Folder"/>
 	<Item Name="WebSockets" Type="Folder">
+		<Item Name="WebSocket Client.lvclass" Type="LVClass" URL="../WebSocket Client/WebSocket Client.lvclass"/>
 		<Item Name="WebSocket Handler.lvclass" Type="LVClass" URL="../WebSocket Handler/WebSocket Handler.lvclass"/>
+		<Item Name="WebSocketUpgradeResponse.lvclass" Type="LVClass" URL="../WebSocketUpgradeResponse/WebSocketUpgradeResponse.lvclass"/>
 	</Item>
 	<Item Name="Processing.lvclass" Type="LVClass" URL="../Processing/Processing.lvclass"/>
 	<Item Name="Server.lvclass" Type="LVClass" URL="../Server/Server.lvclass"/>

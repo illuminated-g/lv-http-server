@@ -86,6 +86,28 @@
 				<Item Name="Trim Whitespace.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace.vi"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
+			<Item Name="Close.vi" Type="VI" URL="../../lv-stream/stream/Endpoint/Close.vi"/>
+			<Item Name="Connection State.ctl" Type="VI" URL="../../lv-stream/stream/Connection State.ctl"/>
+			<Item Name="Connection.lvclass" Type="LVClass" URL="../../lv-stream/stream/Connection/Connection.lvclass"/>
+			<Item Name="Copy State Callbacks.vi" Type="VI" URL="../../lv-stream/stream/Endpoint/Copy State Callbacks.vi"/>
+			<Item Name="Create from URI String.vi" Type="VI" URL="../../lv-stream/stream/URI/Create from URI String.vi"/>
+			<Item Name="Endpoint.lvclass" Type="LVClass" URL="../../lv-stream/stream/Endpoint/Endpoint.lvclass"/>
+			<Item Name="Get Host.vi" Type="VI" URL="../../lv-stream/stream/URI/Get Host.vi"/>
+			<Item Name="Get Port.vi" Type="VI" URL="../../lv-stream/stream/URI/Get Port.vi"/>
+			<Item Name="Get State.vi" Type="VI" URL="../../lv-stream/stream/Connection/Get State.vi"/>
+			<Item Name="Get URI String.vi" Type="VI" URL="../../lv-stream/stream/Endpoint/Get URI String.vi"/>
+			<Item Name="Get URI String.vi" Type="VI" URL="../../lv-stream/stream/URI/Get URI String.vi"/>
+			<Item Name="Get URI.vi" Type="VI" URL="../../lv-stream/stream/Endpoint/Get URI.vi"/>
+			<Item Name="Prepare Stream.vi" Type="VI" URL="../../lv-stream/stream/Endpoint/Prepare Stream.vi"/>
+			<Item Name="Set Host.vi" Type="VI" URL="../../lv-stream/stream/URI/Set Host.vi"/>
+			<Item Name="Set Port.vi" Type="VI" URL="../../lv-stream/stream/URI/Set Port.vi"/>
+			<Item Name="Set State.vi" Type="VI" URL="../../lv-stream/stream/Connection/Set State.vi"/>
+			<Item Name="Set URI.vi" Type="VI" URL="../../lv-stream/stream/Endpoint/Set URI.vi"/>
+			<Item Name="State.ctl" Type="VI" URL="../../lv-stream/stream/Connection/State.ctl"/>
+			<Item Name="Stream.lvclass" Type="LVClass" URL="../../lv-stream/stream/Stream/Stream.lvclass"/>
+			<Item Name="Trigger State Callbacks.vi" Type="VI" URL="../../lv-stream/stream/Connection/Trigger State Callbacks.vi"/>
+			<Item Name="URI.lvclass" Type="LVClass" URL="../../lv-stream/stream/URI/URI.lvclass"/>
+			<Item Name="Wait on State.vi" Type="VI" URL="../../lv-stream/stream/Connection/Wait on State.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="FileWebServer Exe" Type="EXE">
