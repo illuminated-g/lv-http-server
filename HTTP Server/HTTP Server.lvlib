@@ -77,6 +77,10 @@
 			<Item Name="PathRegex Router.lvclass" Type="LVClass" URL="../PathRegex Router/PathRegex Router.lvclass"/>
 			<Item Name="PathValidation.lvclass" Type="LVClass" URL="../PathValidation/PathValidation.lvclass"/>
 		</Item>
+		<Item Name="WebSockets" Type="Folder">
+			<Item Name="WebSocket Handler.lvclass" Type="LVClass" URL="../WebSocket Handler/WebSocket Handler.lvclass"/>
+			<Item Name="WebSocketUpgradeResponse.lvclass" Type="LVClass" URL="../WebSocketUpgradeResponse/WebSocketUpgradeResponse.lvclass"/>
+		</Item>
 	</Item>
 	<Item Name="Authentication" Type="Folder">
 		<Item Name="BasicPasswordEncoder.lvclass" Type="LVClass" URL="../BasicPasswordEncoder/BasicPasswordEncoder.lvclass"/>
@@ -157,9 +161,8 @@
 	</Item>
 	<Item Name="VHost" Type="Folder"/>
 	<Item Name="WebSockets" Type="Folder">
+		<Item Name="Basic WebSocket Manager.lvclass" Type="LVClass" URL="../Basic WebSocket Manager/Basic WebSocket Manager.lvclass"/>
 		<Item Name="WebSocket Client.lvclass" Type="LVClass" URL="../WebSocket Client/WebSocket Client.lvclass"/>
-		<Item Name="WebSocket Handler.lvclass" Type="LVClass" URL="../WebSocket Handler/WebSocket Handler.lvclass"/>
-		<Item Name="WebSocketUpgradeResponse.lvclass" Type="LVClass" URL="../WebSocketUpgradeResponse/WebSocketUpgradeResponse.lvclass"/>
 	</Item>
 	<Item Name="Processing.lvclass" Type="LVClass" URL="../Processing/Processing.lvclass"/>
 	<Item Name="Server.lvclass" Type="LVClass" URL="../Server/Server.lvclass"/>
