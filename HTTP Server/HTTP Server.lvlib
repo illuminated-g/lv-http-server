@@ -164,12 +164,6 @@
 		<Item Name="SSE Client.lvclass" Type="LVClass" URL="../SSE Client/SSE Client.lvclass"/>
 		<Item Name="SSE Handler.lvclass" Type="LVClass" URL="../SSE Handler/SSE Handler.lvclass"/>
 	</Item>
-	<Item Name="TCP" Type="Folder">
-		<Property Name="NI.LibItem.Scope" Type="Int">1</Property>
-		<Item Name="HTTP TCP Client.lvclass" Type="LVClass" URL="../HTTP TCP Client/HTTP TCP Client.lvclass"/>
-		<Item Name="HTTP TCP Server.lvclass" Type="LVClass" URL="../HTTP TCP Server/HTTP TCP Server.lvclass"/>
-		<Item Name="TCP Server.lvclass" Type="LVClass" URL="../TCP Server/TCP Server.lvclass"/>
-	</Item>
 	<Item Name="Templating" Type="Folder">
 		<Item Name="BasicTemplater.lvclass" Type="LVClass" URL="../BasicTemplater/BasicTemplater.lvclass"/>
 		<Item Name="TemplateVariableResolver.lvclass" Type="LVClass" URL="../TemplateVariableResolver/TemplateVariableResolver.lvclass"/>
