@@ -158,8 +158,11 @@
 		<Item Name="SSE Handler.lvclass" Type="LVClass" URL="../SSE Handler/SSE Handler.lvclass"/>
 	</Item>
 	<Item Name="Templating" Type="Folder">
+		<Item Name="Resolvers" Type="Folder">
+			<Item Name="IncludeResolver.lvclass" Type="LVClass" URL="../IncludeResolver/IncludeResolver.lvclass"/>
+		</Item>
 		<Item Name="BasicTemplater.lvclass" Type="LVClass" URL="../BasicTemplater/BasicTemplater.lvclass"/>
-		<Item Name="TemplateVariableResolver.lvclass" Type="LVClass" URL="../TemplateVariableResolver/TemplateVariableResolver.lvclass"/>
+		<Item Name="TemplateValueResolver.lvclass" Type="LVClass" URL="../TemplateVariableResolver/TemplateValueResolver.lvclass"/>
 	</Item>
 	<Item Name="VHost" Type="Folder"/>
 	<Item Name="WebSockets" Type="Folder">
