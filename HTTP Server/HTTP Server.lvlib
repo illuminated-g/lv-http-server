@@ -99,6 +99,7 @@
 	</Item>
 	<Item Name="Controllers" Type="Folder">
 		<Item Name="StandardFileServe.lvclass" Type="LVClass" URL="../StandardFileServe/StandardFileServe.lvclass"/>
+		<Item Name="TemplatedFileServe.lvclass" Type="LVClass" URL="../TemplatedFileServe/TemplatedFileServe.lvclass"/>
 	</Item>
 	<Item Name="CSRF" Type="Folder">
 		<Item Name="Make CSRF Token.vi" Type="VI" URL="../CSRF/Make CSRF Token.vi"/>
@@ -145,6 +146,7 @@
 		<Item Name="Handler.lvclass" Type="LVClass" URL="../Handler/Handler.lvclass"/>
 		<Item Name="Service.lvclass" Type="LVClass" URL="../Service/Service.lvclass"/>
 		<Item Name="SSE Manager.lvclass" Type="LVClass" URL="../SSE Manager/SSE Manager.lvclass"/>
+		<Item Name="TemplateService.lvclass" Type="LVClass" URL="../TemplateService/TemplateService.lvclass"/>
 		<Item Name="WebSocket Manager.lvclass" Type="LVClass" URL="../WebSocket Manager/WebSocket Manager.lvclass"/>
 	</Item>
 	<Item Name="Logging" Type="Folder">

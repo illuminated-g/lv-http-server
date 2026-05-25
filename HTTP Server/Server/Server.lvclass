@@ -757,6 +757,17 @@
 				<Property Name="NI.ClassItem.State" Type="Int">1082925584</Property>
 			</Item>
 		</Item>
+		<Item Name="Templating" Type="Folder">
+			<Item Name="Enable Templating.vi" Type="VI" URL="../Enable Templating.vi">
+				<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!']!!!!$!!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!$B!=!!?!!!C%5B56&amp;!A5W6S&gt;G6S,GRW&lt;'FC$F.F=H:F=CZM&gt;G.M98.T!!!+5W6S&gt;G6S)'^V&gt;!!!4%"Q!"Y!!#M23&amp;255#"4:8*W:8)O&lt;(:M;7)86'6N='RB&gt;'64:8*W;7.F,GRW9WRB=X-!&amp;V2F&lt;8"M982F5W6S&gt;GFD:3!I1G&amp;T;7-J!#"!5!!$!!!!!1!#%W6S=G^S)'FO)#BO&lt;S"F=H*P=CE!*%!Q`````RJ%:7:B&gt;7RU)%FO:'6Y)#BJ&lt;G2F?#ZI&gt;'VM+1!!&amp;%!S`````QN3&lt;W^U)%:P&lt;'2F=A!W1(!!(A!!)B&amp;)6&amp;21)&amp;.F=H:F=CZM&gt;GRJ9AZ4:8*W:8)O&lt;(:D&lt;'&amp;T=Q!!#6.F=H:F=C"J&lt;A"B!0!!$!!$!!1!"!!&amp;!!1!"!!%!!9!"Q!)!!E!#A-!!(A!!!U)!!!!!!!!!!!!!!U,!!!!!!!!!!!!!!!!!!!)!!!!#!!!!!A!!!!1!!!!%!!!$1!!!!Q!!!!!!!!!!!!!!1!,!!!!!!</Property>
+				<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
+				<Property Name="NI.ClassItem.Flags" Type="Int">16777344</Property>
+				<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">true</Property>
+				<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
+				<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
+				<Property Name="NI.ClassItem.State" Type="Int">1342710288</Property>
+			</Item>
+		</Item>
 		<Item Name="WebSocket" Type="Folder">
 			<Item Name="Create WebSocket Resource.vi" Type="VI" URL="../Create WebSocket Resource.vi">
 				<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!(*!!!!$!!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!$Z!=!!?!!!N%5B56&amp;!A5W6S&gt;G6S,GRW&lt;'FC'6&gt;F9F.P9WNF&gt;#".97ZB:W6S,GRW9WRB=X-!"UVB&lt;G&amp;H:8)!/%"Q!"Y!!#)23&amp;255#"4:8*W:8)O&lt;(:M;7)/5W6S&gt;G6S,GRW9WRB=X-!!!J4:8*W:8)A&lt;X6U!!"%1(!!(A!!,2&amp;)6&amp;21)&amp;.F=H:F=CZM&gt;GRJ9BF8:7*4&lt;W.L:81A47&amp;O97&gt;F=CZM&gt;G.M98.T!!R.97ZB:W6S)&amp;2Z='5!!#"!5!!$!!!!!1!#%W6S=G^S)'FO)#BO&lt;S"F=H*P=CE!$E!Q`````Q21982I!!!W1(!!(A!!)B&amp;)6&amp;21)&amp;.F=H:F=CZM&gt;GRJ9AZ4:8*W:8)O&lt;(:D&lt;'&amp;T=Q!!#6.F=H:F=C"J&lt;A"C!0!!$!!$!!1!"1!'!!1!"!!%!!=!#!!%!!E!#A-!!(A!!!U)!!!!!!!!$1=!!!U,!!!!!!!!!!!!!!!!!!!3!!!!#A!!!!!!!!!3!!!!%!!!$A!!#!!-!!!!!!!!!!!!!!%!#Q!!!!!</Property>
