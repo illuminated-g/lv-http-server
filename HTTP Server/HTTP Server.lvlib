@@ -146,7 +146,6 @@
 		<Item Name="Handler.lvclass" Type="LVClass" URL="../Handler/Handler.lvclass"/>
 		<Item Name="Service.lvclass" Type="LVClass" URL="../Service/Service.lvclass"/>
 		<Item Name="SSE Manager.lvclass" Type="LVClass" URL="../SSE Manager/SSE Manager.lvclass"/>
-		<Item Name="TemplateService.lvclass" Type="LVClass" URL="../TemplateService/TemplateService.lvclass"/>
 		<Item Name="WebSocket Manager.lvclass" Type="LVClass" URL="../WebSocket Manager/WebSocket Manager.lvclass"/>
 	</Item>
 	<Item Name="Logging" Type="Folder">
@@ -162,7 +161,9 @@
 			<Item Name="IncludeResolver.lvclass" Type="LVClass" URL="../IncludeResolver/IncludeResolver.lvclass"/>
 		</Item>
 		<Item Name="BasicTemplater.lvclass" Type="LVClass" URL="../BasicTemplater/BasicTemplater.lvclass"/>
+		<Item Name="TemplateService.lvclass" Type="LVClass" URL="../TemplateService/TemplateService.lvclass"/>
 		<Item Name="TemplateValueResolver.lvclass" Type="LVClass" URL="../TemplateVariableResolver/TemplateValueResolver.lvclass"/>
+		<Item Name="Value Tree.lvclass" Type="LVClass" URL="../Value Tree/Value Tree.lvclass"/>
 	</Item>
 	<Item Name="VHost" Type="Folder"/>
 	<Item Name="WebSockets" Type="Folder">
